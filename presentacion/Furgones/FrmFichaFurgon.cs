@@ -62,5 +62,12 @@ namespace presentacion.Furgones
         {
             Close();
         }
+
+        private void bntFichaFurgonEditar_Click(object sender, EventArgs e)
+        {
+            frmModificarFurgon modificar = new frmModificarFurgon(furgon);
+            modificar.ShowDialog();
+            Close();
+        }
     }
 }

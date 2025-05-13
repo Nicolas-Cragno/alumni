@@ -69,7 +69,7 @@ namespace presentacion.Tractores
 
             try
             {
-                modifTractor.Interno = modifTractor.Interno;
+                modifTractor.Interno = tractor.Interno;
                 modifTractor.Dominio = (string)tbxModificarTractorDominio.Text; 
                 modifTractor.Marca = (string)tbxModificarTractorMarca.Text;
                 modifTractor.Modelo = (string)tbxModificarTractorModelo.Text;

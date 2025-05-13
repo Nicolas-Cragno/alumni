@@ -17,7 +17,7 @@ namespace negocio
             List<Furgon> listaFurgones = new List<Furgon>();
             AccesoDatos datos = new AccesoDatos();
 
-            string campoListaFurgones = "SELECT idFurgon, IdEmpresa, dominio, activo, okTaller";
+            string campoListaFurgones = "SELECT idFurgon, IdEmpresa, dominio, activo, okTaller, observaciones";
             string database = " FROM " + db_furgones + ";";
             string queryFurgones = campoListaFurgones + database;
 
@@ -36,6 +36,7 @@ namespace negocio
                     auxFurgon.Dominio = (string)datos.Lector["dominio"];
                     auxFurgon.Activo = (bool)datos.Lector["activo"];
                     auxFurgon.OK_Taller = (bool)datos.Lector["okTaller"];
+                    auxFurgon.Observaciones = (string)datos.Lector["observaciones"];
 
                     listaFurgones.Add(auxFurgon);
                 }
@@ -103,6 +104,23 @@ namespace negocio
             }
         }
 
-        public void modificar(Furgon mdFg) { }
+        public void modificar(Furgon mdFg) 
+        {
+            AccesoDatos datos = new AccesoDatos();
+            int idEmpresa = datos.buscarIdEmpresa(mdFg.Empresa);
+            int activo = datos.numerarBool(mdFg.Activo);
+            int okTaller = datos.numerarBool(mdFg.OK_Taller);
+
+            try
+            {
+                datos.setearConsulta("UPDATE furgones SET idEmpresa=" + idEmpresa + ", dominio='" + mdFg.Dominio.ToUpper() + "', activo=" + activo + ", okTaller=" + okTaller + ", observaciones='" + mdFg.Observaciones.ToUpper() + "' WHERE idFurgon=" + mdFg.Interno + ";");
+                datos.ejecutarAccion();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally { datos.cerrarConexion(); }
+        }
     }
 }

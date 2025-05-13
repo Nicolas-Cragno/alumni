@@ -124,6 +124,12 @@
     <Compile Include="Furgones\FrmFichaFurgon.Designer.cs">
       <DependentUpon>FrmFichaFurgon.cs</DependentUpon>
     </Compile>
+    <Compile Include="Furgones\frmModificarFurgon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Furgones\frmModificarFurgon.Designer.cs">
+      <DependentUpon>frmModificarFurgon.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tractores\FrmAgregarTractor.cs">
@@ -188,6 +194,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Furgones\FrmFichaFurgon.resx">
       <DependentUpon>FrmFichaFurgon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Furgones\frmModificarFurgon.resx">
+      <DependentUpon>frmModificarFurgon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

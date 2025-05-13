@@ -131,6 +131,7 @@
             this.bntFichaFurgonEditar.TabIndex = 100;
             this.bntFichaFurgonEditar.Text = "Editar Datos";
             this.bntFichaFurgonEditar.UseVisualStyleBackColor = true;
+            this.bntFichaFurgonEditar.Click += new System.EventHandler(this.bntFichaFurgonEditar_Click);
             // 
             // tbxFichaFurgonObservaciones
             // 
