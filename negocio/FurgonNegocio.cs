@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using dominio;
+using negocio;
 
 namespace negocio
 {
@@ -81,7 +82,26 @@ namespace negocio
             finally { datos.cerrarConexion(); }
         }
 
-        public void agregar(Furgon nvFg) { }
+        public void agregar(Furgon nvFg)
+        {
+            AccesoDatos datos = new AccesoDatos();
+
+            int idEmpresa = datos.buscarIdEmpresa(nvFg.Empresa);
+
+            try
+            {
+                datos.setearConsulta("INSERT INTO cantarini_control.dbo.furgones (idFurgon, idEmpresa, dominio, observaciones) VALUES (" + nvFg.Interno + ", " + idEmpresa + ", '" + nvFg.Dominio + "', '" + nvFg.Observaciones + "');");
+                datos.ejecutarAccion();
+            }
+            catch(Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+        }
 
         public void modificar(Furgon mdFg) { }
     }

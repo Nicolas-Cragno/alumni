@@ -28,94 +28,96 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnAgregarTractorCerrar = new System.Windows.Forms.Button();
-            this.cbxAgregarTractorEmpresa = new System.Windows.Forms.ComboBox();
-            this.tbxAgregarTractorInterno = new System.Windows.Forms.TextBox();
-            this.lblAgregarTractorInterno = new System.Windows.Forms.Label();
-            this.btnAgregarTractor = new System.Windows.Forms.Button();
-            this.tbxAgregarTractorObservaciones = new System.Windows.Forms.TextBox();
-            this.lblAgregarTractorEmpresa = new System.Windows.Forms.Label();
-            this.tbxAgregarTractorDominio = new System.Windows.Forms.TextBox();
-            this.lblAgregarTractorDominio = new System.Windows.Forms.Label();
+            this.btnAgregarFurgonCerrar = new System.Windows.Forms.Button();
+            this.cbxAgregarFurgonEmpresa = new System.Windows.Forms.ComboBox();
+            this.tbxAgregarFurgonInterno = new System.Windows.Forms.TextBox();
+            this.lblAgregarFurgonInterno = new System.Windows.Forms.Label();
+            this.btnAgregarFurgon = new System.Windows.Forms.Button();
+            this.tbxAgregarFurgonObservaciones = new System.Windows.Forms.TextBox();
+            this.lblAgregarFurgonEmpresa = new System.Windows.Forms.Label();
+            this.tbxAgregarFurgonDominio = new System.Windows.Forms.TextBox();
+            this.lblAgregarFurgonDominio = new System.Windows.Forms.Label();
             this.lblAgregarTractorTitulo = new System.Windows.Forms.Label();
-            this.lblAgregarTractorObservaciones = new System.Windows.Forms.Label();
+            this.lblAgregarFurgonObservaciones = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // btnAgregarTractorCerrar
+            // btnAgregarFurgonCerrar
             // 
-            this.btnAgregarTractorCerrar.Location = new System.Drawing.Point(252, 266);
-            this.btnAgregarTractorCerrar.Name = "btnAgregarTractorCerrar";
-            this.btnAgregarTractorCerrar.Size = new System.Drawing.Size(81, 23);
-            this.btnAgregarTractorCerrar.TabIndex = 98;
-            this.btnAgregarTractorCerrar.Text = "Cerrar";
-            this.btnAgregarTractorCerrar.UseVisualStyleBackColor = true;
-            this.btnAgregarTractorCerrar.Click += new System.EventHandler(this.btnAgregarTractorCerrar_Click);
+            this.btnAgregarFurgonCerrar.Location = new System.Drawing.Point(252, 266);
+            this.btnAgregarFurgonCerrar.Name = "btnAgregarFurgonCerrar";
+            this.btnAgregarFurgonCerrar.Size = new System.Drawing.Size(81, 23);
+            this.btnAgregarFurgonCerrar.TabIndex = 98;
+            this.btnAgregarFurgonCerrar.Text = "Cerrar";
+            this.btnAgregarFurgonCerrar.UseVisualStyleBackColor = true;
+            this.btnAgregarFurgonCerrar.Click += new System.EventHandler(this.btnAgregarFurgonCerrar_Click);
             // 
-            // cbxAgregarTractorEmpresa
+            // cbxAgregarFurgonEmpresa
             // 
-            this.cbxAgregarTractorEmpresa.FormattingEnabled = true;
-            this.cbxAgregarTractorEmpresa.Location = new System.Drawing.Point(76, 81);
-            this.cbxAgregarTractorEmpresa.Name = "cbxAgregarTractorEmpresa";
-            this.cbxAgregarTractorEmpresa.Size = new System.Drawing.Size(257, 21);
-            this.cbxAgregarTractorEmpresa.TabIndex = 97;
+            this.cbxAgregarFurgonEmpresa.FormattingEnabled = true;
+            this.cbxAgregarFurgonEmpresa.Location = new System.Drawing.Point(76, 81);
+            this.cbxAgregarFurgonEmpresa.Name = "cbxAgregarFurgonEmpresa";
+            this.cbxAgregarFurgonEmpresa.Size = new System.Drawing.Size(257, 21);
+            this.cbxAgregarFurgonEmpresa.TabIndex = 97;
+            this.cbxAgregarFurgonEmpresa.SelectedIndexChanged += new System.EventHandler(this.cbxAgregarFurgonEmpresa_SelectedIndexChanged);
             // 
-            // tbxAgregarTractorInterno
+            // tbxAgregarFurgonInterno
             // 
-            this.tbxAgregarTractorInterno.Location = new System.Drawing.Point(76, 55);
-            this.tbxAgregarTractorInterno.Name = "tbxAgregarTractorInterno";
-            this.tbxAgregarTractorInterno.Size = new System.Drawing.Size(75, 20);
-            this.tbxAgregarTractorInterno.TabIndex = 96;
+            this.tbxAgregarFurgonInterno.Location = new System.Drawing.Point(76, 55);
+            this.tbxAgregarFurgonInterno.Name = "tbxAgregarFurgonInterno";
+            this.tbxAgregarFurgonInterno.Size = new System.Drawing.Size(75, 20);
+            this.tbxAgregarFurgonInterno.TabIndex = 96;
             // 
-            // lblAgregarTractorInterno
+            // lblAgregarFurgonInterno
             // 
-            this.lblAgregarTractorInterno.AutoSize = true;
-            this.lblAgregarTractorInterno.Location = new System.Drawing.Point(31, 58);
-            this.lblAgregarTractorInterno.Name = "lblAgregarTractorInterno";
-            this.lblAgregarTractorInterno.Size = new System.Drawing.Size(39, 13);
-            this.lblAgregarTractorInterno.TabIndex = 95;
-            this.lblAgregarTractorInterno.Text = "interno";
+            this.lblAgregarFurgonInterno.AutoSize = true;
+            this.lblAgregarFurgonInterno.Location = new System.Drawing.Point(31, 58);
+            this.lblAgregarFurgonInterno.Name = "lblAgregarFurgonInterno";
+            this.lblAgregarFurgonInterno.Size = new System.Drawing.Size(39, 13);
+            this.lblAgregarFurgonInterno.TabIndex = 95;
+            this.lblAgregarFurgonInterno.Text = "interno";
             // 
-            // btnAgregarTractor
+            // btnAgregarFurgon
             // 
-            this.btnAgregarTractor.Location = new System.Drawing.Point(26, 266);
-            this.btnAgregarTractor.Name = "btnAgregarTractor";
-            this.btnAgregarTractor.Size = new System.Drawing.Size(81, 23);
-            this.btnAgregarTractor.TabIndex = 94;
-            this.btnAgregarTractor.Text = "Agregar";
-            this.btnAgregarTractor.UseVisualStyleBackColor = true;
+            this.btnAgregarFurgon.Location = new System.Drawing.Point(26, 266);
+            this.btnAgregarFurgon.Name = "btnAgregarFurgon";
+            this.btnAgregarFurgon.Size = new System.Drawing.Size(81, 23);
+            this.btnAgregarFurgon.TabIndex = 94;
+            this.btnAgregarFurgon.Text = "Agregar";
+            this.btnAgregarFurgon.UseVisualStyleBackColor = true;
+            this.btnAgregarFurgon.Click += new System.EventHandler(this.btnAgregarFurgon_Click);
             // 
-            // tbxAgregarTractorObservaciones
+            // tbxAgregarFurgonObservaciones
             // 
-            this.tbxAgregarTractorObservaciones.Location = new System.Drawing.Point(26, 134);
-            this.tbxAgregarTractorObservaciones.Multiline = true;
-            this.tbxAgregarTractorObservaciones.Name = "tbxAgregarTractorObservaciones";
-            this.tbxAgregarTractorObservaciones.Size = new System.Drawing.Size(307, 126);
-            this.tbxAgregarTractorObservaciones.TabIndex = 93;
+            this.tbxAgregarFurgonObservaciones.Location = new System.Drawing.Point(26, 134);
+            this.tbxAgregarFurgonObservaciones.Multiline = true;
+            this.tbxAgregarFurgonObservaciones.Name = "tbxAgregarFurgonObservaciones";
+            this.tbxAgregarFurgonObservaciones.Size = new System.Drawing.Size(307, 126);
+            this.tbxAgregarFurgonObservaciones.TabIndex = 93;
             // 
-            // lblAgregarTractorEmpresa
+            // lblAgregarFurgonEmpresa
             // 
-            this.lblAgregarTractorEmpresa.AutoSize = true;
-            this.lblAgregarTractorEmpresa.Location = new System.Drawing.Point(23, 85);
-            this.lblAgregarTractorEmpresa.Name = "lblAgregarTractorEmpresa";
-            this.lblAgregarTractorEmpresa.Size = new System.Drawing.Size(47, 13);
-            this.lblAgregarTractorEmpresa.TabIndex = 91;
-            this.lblAgregarTractorEmpresa.Text = "empresa";
+            this.lblAgregarFurgonEmpresa.AutoSize = true;
+            this.lblAgregarFurgonEmpresa.Location = new System.Drawing.Point(23, 85);
+            this.lblAgregarFurgonEmpresa.Name = "lblAgregarFurgonEmpresa";
+            this.lblAgregarFurgonEmpresa.Size = new System.Drawing.Size(47, 13);
+            this.lblAgregarFurgonEmpresa.TabIndex = 91;
+            this.lblAgregarFurgonEmpresa.Text = "empresa";
             // 
-            // tbxAgregarTractorDominio
+            // tbxAgregarFurgonDominio
             // 
-            this.tbxAgregarTractorDominio.Location = new System.Drawing.Point(220, 55);
-            this.tbxAgregarTractorDominio.Name = "tbxAgregarTractorDominio";
-            this.tbxAgregarTractorDominio.Size = new System.Drawing.Size(113, 20);
-            this.tbxAgregarTractorDominio.TabIndex = 88;
+            this.tbxAgregarFurgonDominio.Location = new System.Drawing.Point(220, 55);
+            this.tbxAgregarFurgonDominio.Name = "tbxAgregarFurgonDominio";
+            this.tbxAgregarFurgonDominio.Size = new System.Drawing.Size(113, 20);
+            this.tbxAgregarFurgonDominio.TabIndex = 88;
             // 
-            // lblAgregarTractorDominio
+            // lblAgregarFurgonDominio
             // 
-            this.lblAgregarTractorDominio.AutoSize = true;
-            this.lblAgregarTractorDominio.Location = new System.Drawing.Point(171, 58);
-            this.lblAgregarTractorDominio.Name = "lblAgregarTractorDominio";
-            this.lblAgregarTractorDominio.Size = new System.Drawing.Size(43, 13);
-            this.lblAgregarTractorDominio.TabIndex = 87;
-            this.lblAgregarTractorDominio.Text = "dominio";
+            this.lblAgregarFurgonDominio.AutoSize = true;
+            this.lblAgregarFurgonDominio.Location = new System.Drawing.Point(171, 58);
+            this.lblAgregarFurgonDominio.Name = "lblAgregarFurgonDominio";
+            this.lblAgregarFurgonDominio.Size = new System.Drawing.Size(43, 13);
+            this.lblAgregarFurgonDominio.TabIndex = 87;
+            this.lblAgregarFurgonDominio.Text = "dominio";
             // 
             // lblAgregarTractorTitulo
             // 
@@ -127,30 +129,30 @@
             this.lblAgregarTractorTitulo.TabIndex = 86;
             this.lblAgregarTractorTitulo.Text = "Nuevo Furgón";
             // 
-            // lblAgregarTractorObservaciones
+            // lblAgregarFurgonObservaciones
             // 
-            this.lblAgregarTractorObservaciones.AutoSize = true;
-            this.lblAgregarTractorObservaciones.Location = new System.Drawing.Point(27, 118);
-            this.lblAgregarTractorObservaciones.Name = "lblAgregarTractorObservaciones";
-            this.lblAgregarTractorObservaciones.Size = new System.Drawing.Size(78, 13);
-            this.lblAgregarTractorObservaciones.TabIndex = 92;
-            this.lblAgregarTractorObservaciones.Text = "Observaciones";
+            this.lblAgregarFurgonObservaciones.AutoSize = true;
+            this.lblAgregarFurgonObservaciones.Location = new System.Drawing.Point(27, 118);
+            this.lblAgregarFurgonObservaciones.Name = "lblAgregarFurgonObservaciones";
+            this.lblAgregarFurgonObservaciones.Size = new System.Drawing.Size(78, 13);
+            this.lblAgregarFurgonObservaciones.TabIndex = 92;
+            this.lblAgregarFurgonObservaciones.Text = "Observaciones";
             // 
             // FrmAgregarFurgon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(355, 314);
-            this.Controls.Add(this.btnAgregarTractorCerrar);
-            this.Controls.Add(this.cbxAgregarTractorEmpresa);
-            this.Controls.Add(this.tbxAgregarTractorInterno);
-            this.Controls.Add(this.lblAgregarTractorInterno);
-            this.Controls.Add(this.btnAgregarTractor);
-            this.Controls.Add(this.tbxAgregarTractorObservaciones);
-            this.Controls.Add(this.lblAgregarTractorObservaciones);
-            this.Controls.Add(this.lblAgregarTractorEmpresa);
-            this.Controls.Add(this.tbxAgregarTractorDominio);
-            this.Controls.Add(this.lblAgregarTractorDominio);
+            this.Controls.Add(this.btnAgregarFurgonCerrar);
+            this.Controls.Add(this.cbxAgregarFurgonEmpresa);
+            this.Controls.Add(this.tbxAgregarFurgonInterno);
+            this.Controls.Add(this.lblAgregarFurgonInterno);
+            this.Controls.Add(this.btnAgregarFurgon);
+            this.Controls.Add(this.tbxAgregarFurgonObservaciones);
+            this.Controls.Add(this.lblAgregarFurgonObservaciones);
+            this.Controls.Add(this.lblAgregarFurgonEmpresa);
+            this.Controls.Add(this.tbxAgregarFurgonDominio);
+            this.Controls.Add(this.lblAgregarFurgonDominio);
             this.Controls.Add(this.lblAgregarTractorTitulo);
             this.Name = "FrmAgregarFurgon";
             this.Text = "FrmAgregarFurgon";
@@ -161,16 +163,16 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button btnAgregarTractorCerrar;
-        private System.Windows.Forms.ComboBox cbxAgregarTractorEmpresa;
-        private System.Windows.Forms.TextBox tbxAgregarTractorInterno;
-        private System.Windows.Forms.Label lblAgregarTractorInterno;
-        private System.Windows.Forms.Button btnAgregarTractor;
-        private System.Windows.Forms.TextBox tbxAgregarTractorObservaciones;
-        private System.Windows.Forms.Label lblAgregarTractorEmpresa;
-        private System.Windows.Forms.TextBox tbxAgregarTractorDominio;
-        private System.Windows.Forms.Label lblAgregarTractorDominio;
+        private System.Windows.Forms.Button btnAgregarFurgonCerrar;
+        private System.Windows.Forms.ComboBox cbxAgregarFurgonEmpresa;
+        private System.Windows.Forms.TextBox tbxAgregarFurgonInterno;
+        private System.Windows.Forms.Label lblAgregarFurgonInterno;
+        private System.Windows.Forms.Button btnAgregarFurgon;
+        private System.Windows.Forms.TextBox tbxAgregarFurgonObservaciones;
+        private System.Windows.Forms.Label lblAgregarFurgonEmpresa;
+        private System.Windows.Forms.TextBox tbxAgregarFurgonDominio;
+        private System.Windows.Forms.Label lblAgregarFurgonDominio;
         private System.Windows.Forms.Label lblAgregarTractorTitulo;
-        private System.Windows.Forms.Label lblAgregarTractorObservaciones;
+        private System.Windows.Forms.Label lblAgregarFurgonObservaciones;
     }
 }

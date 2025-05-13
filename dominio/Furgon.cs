@@ -11,7 +11,7 @@ namespace dominio
         public int Interno { get; set; }
         public string Empresa { get; set; }
         public string Dominio { get; set; }
-
+        public string Observaciones {  get; set; }
         public bool Activo { get; set; }
         public bool OK_Taller {  get; set; }
     }

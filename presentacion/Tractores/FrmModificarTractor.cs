@@ -63,10 +63,34 @@ namespace presentacion.Tractores
         {
             Tractor modifTractor = new Tractor();
             TractorNegocio negocio = new TractorNegocio();
+            Evento evento = new Evento();
+            EventoNegocio eventoNegocio = new EventoNegocio();
+            AccesoDatos datos = new AccesoDatos();
 
             try
             {
-                // subir datos a db
+                modifTractor.Interno = modifTractor.Interno;
+                modifTractor.Dominio = (string)tbxModificarTractorDominio.Text; 
+                modifTractor.Marca = (string)tbxModificarTractorMarca.Text;
+                modifTractor.Modelo = (string)tbxModificarTractorModelo.Text;
+                modifTractor.Satelital_Ubicacion = (string)cbxModificarTractorUbicacion.Text;
+                modifTractor.Satelital_Combustible = (string)cbxModificarTractorCombustible.Text;
+                modifTractor.Empresa = (string)cbxModificarTractorEmpresa.Text;
+                modifTractor.Observaciones = (string)tbxModificarTractorObservaciones.Text;
+                modifTractor.Activo = cbxModificarTractorActivo.Checked;
+                modifTractor.OK_Adm = cbxModificarTractorADM.Checked;
+                modifTractor.OK_Trafico = cbxModificarTractorTrafico.Checked;
+                modifTractor.OK_Taller = cbxModificarTractorTaller.Checked;
+                modifTractor.OK_Satelital = cbxModificarTractorSat.Checked;
+
+                evento.Interno = modifTractor.Interno;
+                evento.Tipo = "MODIFICACIÓN";
+                evento.Detalle = "MODIFICACIÓN DE DATOS POR SISTEMA.";
+                eventoNegocio.registrarEvento(evento);
+
+                negocio.modificar(modifTractor);
+                MessageBox.Show("Datos actualizados");
+                Close();
             }
             catch (Exception ex)
             {

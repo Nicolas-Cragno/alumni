@@ -29,10 +29,15 @@ namespace negocio
                 while (datos.Lector.Read())
                 {
                     Tractor auxTractor = new Tractor();
+                    string sat_ub = datos.buscarSatUb((int)datos.Lector["idSat_Ub"]);
+                    string sat_cb = datos.buscarSatCb((int)datos.Lector["idSat_Cb"]);
+
 
                     auxTractor.Interno = (int)datos.Lector["interno"];
                     int auxEmpresa = (int)datos.Lector["idEmpresa"];
                     auxTractor.Empresa = datos.buscarEmpresa(auxEmpresa);
+                    auxTractor.Satelital_Ubicacion = sat_ub;
+                    auxTractor.Satelital_Combustible = sat_cb;
                     auxTractor.Dominio = (string)datos.Lector["dominio"];
                     auxTractor.Modelo = (string)datos.Lector["modelo"].ToString();
                     auxTractor.Marca = (string)datos.Lector["marca"].ToString();
@@ -128,20 +133,29 @@ namespace negocio
 
         public void modificar(Tractor mdTr) 
         {
-            /*
-             
             AccesoDatos datos = new AccesoDatos();
             int idEmpresa = datos.buscarIdEmpresa(mdTr.Empresa);
             int idSatUb = datos.buscarIdSatUb(mdTr.Satelital_Ubicacion);
             int idSatCb = datos.buscarIdSatCb(mdTr.Satelital_Combustible);
-            int dni = datos.buscarDni(mdTr.Chofer);
-
+            int activo = datos.numerarBool(mdTr.Activo);
+            int okTaller = datos.numerarBool(mdTr.OK_Taller);
+            int okAdm = datos.numerarBool(mdTr.OK_Adm);
+            int okSat = datos.numerarBool(mdTr.OK_Satelital);
+            int okTrafico = datos.numerarBool(mdTr.OK_Trafico);
 
             try
             {
-                datos.setearConsulta("UPDATE cantarini_control.dbo.tractores SET idEmpresa=" + mdTr.Empresa + ", idSat_Ub=0, idSat_Cb=0, dni=NULL, dominio='#S/A', modelo='', marca='', activo=0, observaciones='', okTaller=0, okAdm=0, okSat=0, okTrafico=0 WHERE interno=0;\r\n");
+                datos.setearConsulta("UPDATE cantarini_control.dbo.tractores SET idEmpresa=" + idEmpresa + ", idSat_Ub=" + idSatUb + ", idSat_Cb=" + idSatCb + ", dominio='" + mdTr.Dominio.ToUpper() + "', modelo='" + mdTr.Modelo.ToUpper() + "', marca='" + mdTr.Marca.ToUpper() + "', observaciones='" + mdTr.Observaciones.ToUpper() + "', activo=" + activo + ", okTaller=" + okTaller + ", okAdm=" + okAdm + ", okSat=" + okSat + ", okTrafico=" + okTrafico + " WHERE interno =" + mdTr.Interno + ";");
+                datos.ejecutarAccion();
             }
-            */
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally 
+            {
+                datos.cerrarConexion();
+            }
         }
     }
 }

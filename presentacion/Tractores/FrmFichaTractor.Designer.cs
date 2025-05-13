@@ -52,9 +52,9 @@
             this.lblFichaTractorEstado = new System.Windows.Forms.Label();
             this.gpxFichaTractorSatelital = new System.Windows.Forms.GroupBox();
             this.lblFichaTractorSatCb = new System.Windows.Forms.Label();
-            this.cbxFichaTractorSatCb = new System.Windows.Forms.ComboBox();
-            this.cbxFichaTractorSatUb = new System.Windows.Forms.ComboBox();
             this.lblFichaTractorSatUb = new System.Windows.Forms.Label();
+            this.tbxFichaTractorSatUb = new System.Windows.Forms.TextBox();
+            this.tbxFichaTractorSatCb = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFichaTractorEventos)).BeginInit();
             this.gpxFichaTractorSatelital.SuspendLayout();
             this.SuspendLayout();
@@ -67,6 +67,7 @@
             this.btnFichaTractorCerrar.TabIndex = 49;
             this.btnFichaTractorCerrar.Text = "Cerrar";
             this.btnFichaTractorCerrar.UseVisualStyleBackColor = true;
+            this.btnFichaTractorCerrar.Click += new System.EventHandler(this.btnFichaTractorCerrar_Click);
             // 
             // btnAgregarFichaTractorEventos
             // 
@@ -123,6 +124,7 @@
             this.bntFichaTractorEditar.TabIndex = 43;
             this.bntFichaTractorEditar.Text = "Editar Datos";
             this.bntFichaTractorEditar.UseVisualStyleBackColor = true;
+            this.bntFichaTractorEditar.Click += new System.EventHandler(this.bntFichaTractorEditar_Click);
             // 
             // tbxFichaTractorObservaciones
             // 
@@ -256,9 +258,9 @@
             // 
             // gpxFichaTractorSatelital
             // 
+            this.gpxFichaTractorSatelital.Controls.Add(this.tbxFichaTractorSatCb);
+            this.gpxFichaTractorSatelital.Controls.Add(this.tbxFichaTractorSatUb);
             this.gpxFichaTractorSatelital.Controls.Add(this.lblFichaTractorSatCb);
-            this.gpxFichaTractorSatelital.Controls.Add(this.cbxFichaTractorSatCb);
-            this.gpxFichaTractorSatelital.Controls.Add(this.cbxFichaTractorSatUb);
             this.gpxFichaTractorSatelital.Controls.Add(this.lblFichaTractorSatUb);
             this.gpxFichaTractorSatelital.Location = new System.Drawing.Point(26, 214);
             this.gpxFichaTractorSatelital.Name = "gpxFichaTractorSatelital";
@@ -276,22 +278,6 @@
             this.lblFichaTractorSatCb.TabIndex = 82;
             this.lblFichaTractorSatCb.Text = "combustible";
             // 
-            // cbxFichaTractorSatCb
-            // 
-            this.cbxFichaTractorSatCb.FormattingEnabled = true;
-            this.cbxFichaTractorSatCb.Location = new System.Drawing.Point(70, 49);
-            this.cbxFichaTractorSatCb.Name = "cbxFichaTractorSatCb";
-            this.cbxFichaTractorSatCb.Size = new System.Drawing.Size(157, 21);
-            this.cbxFichaTractorSatCb.TabIndex = 83;
-            // 
-            // cbxFichaTractorSatUb
-            // 
-            this.cbxFichaTractorSatUb.FormattingEnabled = true;
-            this.cbxFichaTractorSatUb.Location = new System.Drawing.Point(70, 19);
-            this.cbxFichaTractorSatUb.Name = "cbxFichaTractorSatUb";
-            this.cbxFichaTractorSatUb.Size = new System.Drawing.Size(157, 21);
-            this.cbxFichaTractorSatUb.TabIndex = 81;
-            // 
             // lblFichaTractorSatUb
             // 
             this.lblFichaTractorSatUb.AutoSize = true;
@@ -300,6 +286,22 @@
             this.lblFichaTractorSatUb.Size = new System.Drawing.Size(53, 13);
             this.lblFichaTractorSatUb.TabIndex = 73;
             this.lblFichaTractorSatUb.Text = "ubicación";
+            // 
+            // tbxFichaTractorSatUb
+            // 
+            this.tbxFichaTractorSatUb.Location = new System.Drawing.Point(70, 19);
+            this.tbxFichaTractorSatUb.Name = "tbxFichaTractorSatUb";
+            this.tbxFichaTractorSatUb.ReadOnly = true;
+            this.tbxFichaTractorSatUb.Size = new System.Drawing.Size(157, 20);
+            this.tbxFichaTractorSatUb.TabIndex = 84;
+            // 
+            // tbxFichaTractorSatCb
+            // 
+            this.tbxFichaTractorSatCb.Location = new System.Drawing.Point(70, 49);
+            this.tbxFichaTractorSatCb.Name = "tbxFichaTractorSatCb";
+            this.tbxFichaTractorSatCb.ReadOnly = true;
+            this.tbxFichaTractorSatCb.Size = new System.Drawing.Size(157, 20);
+            this.tbxFichaTractorSatCb.TabIndex = 85;
             // 
             // FrmFichaTractor
             // 
@@ -366,8 +368,8 @@
         private System.Windows.Forms.Label lblFichaTractorEstado;
         private System.Windows.Forms.GroupBox gpxFichaTractorSatelital;
         private System.Windows.Forms.Label lblFichaTractorSatCb;
-        private System.Windows.Forms.ComboBox cbxFichaTractorSatCb;
-        private System.Windows.Forms.ComboBox cbxFichaTractorSatUb;
         private System.Windows.Forms.Label lblFichaTractorSatUb;
+        private System.Windows.Forms.TextBox tbxFichaTractorSatCb;
+        private System.Windows.Forms.TextBox tbxFichaTractorSatUb;
     }
 }

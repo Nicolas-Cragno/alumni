@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,7 +19,7 @@ namespace negocio
             List<Evento> listaEventos = new List<Evento>();
             AccesoDatos datos = new AccesoDatos();
 
-            string camposListaEventos = "SELECT idEvento, dni, interno, tipo, detalle, fecha ";
+            string camposListaEventos = "SELECT idEvento, dni, interno, furgon, tipo, detalle, fecha ";
             string database = "FROM " + db_eventos + " ORDER BY fecha DESC;";
             string queryEventos = camposListaEventos + database;
 
@@ -34,6 +35,7 @@ namespace negocio
                     auxEvento.Id_Evento = (int)datos.Lector["idEvento"];
                     auxEvento.Persona = datos.buscarChofer(auxDni);
                     auxEvento.Interno = (int)datos.Lector["interno"];
+                    auxEvento.Furgon = (int)datos.Lector["furgon"];
                     auxEvento.Tipo = (string)datos.Lector["tipo"];
                     auxEvento.Detalle = (string)datos.Lector["detalle"];
                     auxEvento.Fecha = (DateTime)datos.Lector["fecha"];
@@ -97,6 +99,92 @@ namespace negocio
             }
         }
 
+        public List<Evento> listarEventosTractor(int intTractor)
+        {
+            List<Evento> listaEventosTractor = new List<Evento>();
+            AccesoDatos datos = new AccesoDatos();
+
+            string camposListaEventosTractor = "SELECT IdEvento, dni, interno, furgon, tipo, detalle, fecha";
+            string database = " FROM " + db_eventos;
+            string parametro = " WHERE interno=" + intTractor + ";";
+            string queryEventosTractor = camposListaEventosTractor + database + parametro;
+
+            try
+            {
+                datos.setearConsulta(queryEventosTractor);
+                datos.ejecutarLectura();
+
+                while (datos.Lector.Read())
+                {
+                    Evento auxEvento = new Evento();
+                    int auxDni = (int)datos.Lector["dni"];
+                    auxEvento.Id_Evento = (int)datos.Lector["IdEvento"];
+                    auxEvento.Persona = datos.buscarChofer(auxDni);
+                    auxEvento.Interno = (int)datos.Lector["interno"];
+                    auxEvento.Tipo = (string)datos.Lector["tipo"];
+                    auxEvento.Detalle = (string)datos.Lector["detalle"];
+                    auxEvento.Fecha = (DateTime)datos.Lector["fecha"];
+                    auxEvento.Furgon = (int)datos.Lector["furgon"];
+
+                    listaEventosTractor.Add(auxEvento);
+                }
+
+                return listaEventosTractor;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+        }
+
+        public List<Evento> listarEventosFurgon(int intFurgon)
+        {
+            List<Evento> listaEventosFurgon = new List<Evento>();
+            AccesoDatos datos = new AccesoDatos();
+
+            string camposListaEventosFurgon = "SELECT IdEvento, dni, interno, furgon, tipo, detalle, fecha";
+            string database = " FROM " + db_eventos;
+            string parametro = " WHERE furgon=" + intFurgon + ";";
+            string queryEventosFurgon = camposListaEventosFurgon + database + parametro;
+
+            try
+            {
+                datos.setearConsulta(queryEventosFurgon);
+                datos.ejecutarLectura();
+
+                while (datos.Lector.Read())
+                {
+                    Evento auxEvento = new Evento();
+                    int auxDni = (int)datos.Lector["dni"];
+                    auxEvento.Id_Evento = (int)datos.Lector["IdEvento"];
+                    auxEvento.Persona = datos.buscarChofer(auxDni);
+                    auxEvento.Interno = (int)datos.Lector["interno"];
+                    auxEvento.Tipo = (string)datos.Lector["tipo"];
+                    auxEvento.Detalle = (string)datos.Lector["detalle"];
+                    auxEvento.Fecha = (DateTime)datos.Lector["fecha"];
+
+                    auxEvento.Furgon = (int)datos.Lector["furgon"];
+                    /*
+                     */
+                    listaEventosFurgon.Add(auxEvento);
+                }
+
+                return listaEventosFurgon;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+        }
+
         public void agregarEvento(Evento nvEv)
         {
             AccesoDatos datos = new AccesoDatos();
@@ -114,7 +202,7 @@ namespace negocio
 
                 try
                 {
-                    datos.setearConsulta("INSERT INTO cantarini_control.dbo.eventos (dni, interno, tipo, detalle, fecha) VALUES (" + dni + ", " + nvEv.Interno + ", '" + nvEv.Tipo.ToUpper() + "', '" + nvEv.Detalle.ToUpper() + "', convert(datetime, getdate()));");
+                    datos.setearConsulta("INSERT INTO cantarini_control.dbo.eventos (dni, interno, furgon, tipo, detalle, fecha) VALUES (" + dni + ", " + nvEv.Interno + ", " + nvEv.Furgon + ", '" + nvEv.Tipo.ToUpper() + "', '" + nvEv.Detalle.ToUpper() + "', convert(datetime, getdate()));");
                     datos.ejecutarAccion();
                 }
                 catch (Exception ex)
@@ -130,7 +218,7 @@ namespace negocio
 
             try
             {
-                datos.setearConsulta("INSERT INTO cantarini_control.dbo.eventos (dni, interno, tipo, detalle, fecha) VALUES (" + nvEv.Dni + ", " + nvEv.Interno + ", '" + nvEv.Tipo.ToUpper() + "', '" + nvEv.Detalle.ToUpper() + "', convert(datetime, getdate()));");
+                datos.setearConsulta("INSERT INTO cantarini_control.dbo.eventos (dni, interno, furgon, tipo, detalle, fecha) VALUES (" + nvEv.Dni + ", " + nvEv.Interno + ", " + nvEv.Furgon + ", '" + nvEv.Tipo.ToUpper() + "', '" + nvEv.Detalle.ToUpper() + "', convert(datetime, getdate()));");
                 datos.ejecutarAccion();
             }
             catch (Exception ex)
@@ -164,48 +252,6 @@ namespace negocio
                 throw ex;
             }
             finally { datos.cerrarConexion(); }
-        }
-
-        public List<Evento> listarEventosTractor(int interno)
-        {
-            List<Evento> listaEventosTractor = new List<Evento>();
-            AccesoDatos datos = new AccesoDatos();
-
-            string camposListaEventosTractor = "select IdEvento, dni, interno, tipo, detalle, fecha";
-            string database = "FROM " + db_eventos + " ";
-            string parametro = "WHERE interno=" + interno + ";";
-            string queryEventosTractor = camposListaEventosTractor + database;
-
-            try
-            {
-                datos.setearConsulta(queryEventosTractor);
-                datos.ejecutarLectura();
-
-                while (datos.Lector.Read())
-                {
-                    Evento auxEvento = new Evento();
-                    int auxDni = (int)datos.Lector["dni"];
-
-                    auxEvento.Id_Evento = (int)datos.Lector["IdEvento"];
-                    auxEvento.Persona = datos.buscarChofer(auxDni);
-                    auxEvento.Interno = (int)datos.Lector["interno"];
-                    auxEvento.Tipo = (string)datos.Lector["tipo"];
-                    auxEvento.Detalle = (string)datos.Lector["detalle"];
-                    auxEvento.Fecha = (DateTime)datos.Lector["fecha"];
-
-                    listaEventosTractor.Add(auxEvento);
-                }
-
-                return listaEventosTractor;
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-            finally
-            {
-                datos.cerrarConexion();
-            }
         }
     }
 }
