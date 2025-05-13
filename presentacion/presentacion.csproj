@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3F63A0C3-3BB8-4553-ABF6-38C166F7F3F7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>presentacion</RootNamespace>
+    <AssemblyName>presentacion</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Choferes\FrmAgregarChofer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Choferes\FrmAgregarChofer.Designer.cs">
+      <DependentUpon>FrmAgregarChofer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Choferes\FrmChoferes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Choferes\FrmChoferes.Designer.cs">
+      <DependentUpon>FrmChoferes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Choferes\FrmEventoChofer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Choferes\FrmEventoChofer.Designer.cs">
+      <DependentUpon>FrmEventoChofer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Choferes\FrmFichaChofer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Choferes\FrmFichaChofer.Designer.cs">
+      <DependentUpon>FrmFichaChofer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Choferes\FrmModificarChofer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Choferes\FrmModificarChofer.Designer.cs">
+      <DependentUpon>FrmModificarChofer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Eventos\FrmAgregarEvento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eventos\FrmAgregarEvento.Designer.cs">
+      <DependentUpon>FrmAgregarEvento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Eventos\FrmEventos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eventos\FrmEventos.Designer.cs">
+      <DependentUpon>FrmEventos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Eventos\FrmFichaEvento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eventos\FrmFichaEvento.Designer.cs">
+      <DependentUpon>FrmFichaEvento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Eventos\FrmModificarEvento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eventos\FrmModificarEvento.Designer.cs">
+      <DependentUpon>FrmModificarEvento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrincipal.Designer.cs">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Furgones\FrmAgregarFurgon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Furgones\FrmAgregarFurgon.Designer.cs">
+      <DependentUpon>FrmAgregarFurgon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tractores\FrmAgregarTractor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tractores\FrmAgregarTractor.Designer.cs">
+      <DependentUpon>FrmAgregarTractor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tractores\FrmFichaTractor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tractores\FrmFichaTractor.Designer.cs">
+      <DependentUpon>FrmFichaTractor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tractores\FrmModificarTractor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tractores\FrmModificarTractor.Designer.cs">
+      <DependentUpon>FrmModificarTractor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vehiculos\FrmVehiculos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vehiculos\FrmVehiculos.Designer.cs">
+      <DependentUpon>FrmVehiculos.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Choferes\FrmAgregarChofer.resx">
+      <DependentUpon>FrmAgregarChofer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Choferes\FrmChoferes.resx">
+      <DependentUpon>FrmChoferes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Choferes\FrmEventoChofer.resx">
+      <DependentUpon>FrmEventoChofer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Choferes\FrmFichaChofer.resx">
+      <DependentUpon>FrmFichaChofer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Choferes\FrmModificarChofer.resx">
+      <DependentUpon>FrmModificarChofer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Eventos\FrmAgregarEvento.resx">
+      <DependentUpon>FrmAgregarEvento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Eventos\FrmEventos.resx">
+      <DependentUpon>FrmEventos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Eventos\FrmFichaEvento.resx">
+      <DependentUpon>FrmFichaEvento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Eventos\FrmModificarEvento.resx">
+      <DependentUpon>FrmModificarEvento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrincipal.resx">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Furgones\FrmAgregarFurgon.resx">
+      <DependentUpon>FrmAgregarFurgon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Tractores\FrmAgregarTractor.resx">
+      <DependentUpon>FrmAgregarTractor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tractores\FrmFichaTractor.resx">
+      <DependentUpon>FrmFichaTractor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tractores\FrmModificarTractor.resx">
+      <DependentUpon>FrmModificarTractor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vehiculos\FrmVehiculos.resx">
+      <DependentUpon>FrmVehiculos.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\dominio\dominio.csproj">
+      <Project>{ead444ef-32ac-4231-bb99-a1075d51ef32}</Project>
+      <Name>dominio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\negocio\negocio.csproj">
+      <Project>{40adc42d-f3cb-4c22-994e-4194e311a924}</Project>
+      <Name>negocio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

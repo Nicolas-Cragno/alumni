@@ -1,0 +1,95 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\NIcolas Cragno\\Desktop\\aplicaciones\\Alumni\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3F63A0C3-3BB8-4553-ABF6-38C166F7F3F7}|presentacion\\presentacion.csproj|c:\\users\\nicolas cragno\\desktop\\aplicaciones\\alumni\\presentacion\\eventos\\frmeventos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F63A0C3-3BB8-4553-ABF6-38C166F7F3F7}|presentacion\\presentacion.csproj|solutionrelative:presentacion\\eventos\\frmeventos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F63A0C3-3BB8-4553-ABF6-38C166F7F3F7}|presentacion\\presentacion.csproj|c:\\users\\nicolas cragno\\desktop\\aplicaciones\\alumni\\presentacion\\eventos\\frmeventos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3F63A0C3-3BB8-4553-ABF6-38C166F7F3F7}|presentacion\\presentacion.csproj|solutionrelative:presentacion\\eventos\\frmeventos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40ADC42D-F3CB-4C22-994E-4194E311A924}|negocio\\negocio.csproj|c:\\users\\nicolas cragno\\desktop\\aplicaciones\\alumni\\negocio\\eventonegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40ADC42D-F3CB-4C22-994E-4194E311A924}|negocio\\negocio.csproj|solutionrelative:negocio\\eventonegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAD444EF-32AC-4231-BB99-A1075D51EF32}|dominio\\dominio.csproj|c:\\users\\nicolas cragno\\desktop\\aplicaciones\\alumni\\dominio\\evento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAD444EF-32AC-4231-BB99-A1075D51EF32}|dominio\\dominio.csproj|solutionrelative:dominio\\evento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FrmEventos.cs",
+              "DocumentMoniker": "C:\\Users\\NIcolas Cragno\\Desktop\\aplicaciones\\Alumni\\presentacion\\Eventos\\FrmEventos.cs",
+              "RelativeDocumentMoniker": "presentacion\\Eventos\\FrmEventos.cs",
+              "ToolTip": "C:\\Users\\NIcolas Cragno\\Desktop\\aplicaciones\\Alumni\\presentacion\\Eventos\\FrmEventos.cs",
+              "RelativeToolTip": "presentacion\\Eventos\\FrmEventos.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBoAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T13:17:26.03Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FrmEventos.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\NIcolas Cragno\\Desktop\\aplicaciones\\Alumni\\presentacion\\Eventos\\FrmEventos.cs",
+              "RelativeDocumentMoniker": "presentacion\\Eventos\\FrmEventos.cs",
+              "ToolTip": "C:\\Users\\NIcolas Cragno\\Desktop\\aplicaciones\\Alumni\\presentacion\\Eventos\\FrmEventos.cs [Dise\u00F1o]",
+              "RelativeToolTip": "presentacion\\Eventos\\FrmEventos.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T13:17:24.355Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Evento.cs",
+              "DocumentMoniker": "C:\\Users\\NIcolas Cragno\\Desktop\\aplicaciones\\Alumni\\dominio\\Evento.cs",
+              "RelativeDocumentMoniker": "dominio\\Evento.cs",
+              "ToolTip": "C:\\Users\\NIcolas Cragno\\Desktop\\aplicaciones\\Alumni\\dominio\\Evento.cs",
+              "RelativeToolTip": "dominio\\Evento.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T13:17:03.573Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EventoNegocio.cs",
+              "DocumentMoniker": "C:\\Users\\NIcolas Cragno\\Desktop\\aplicaciones\\Alumni\\negocio\\EventoNegocio.cs",
+              "RelativeDocumentMoniker": "negocio\\EventoNegocio.cs",
+              "ToolTip": "C:\\Users\\NIcolas Cragno\\Desktop\\aplicaciones\\Alumni\\negocio\\EventoNegocio.cs",
+              "RelativeToolTip": "negocio\\EventoNegocio.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAcwBUAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T13:15:44.194Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
