@@ -35,8 +35,7 @@ namespace presentacion
 
         private void btnMovimientos_Click(object sender, EventArgs e)
         {
-            //FrmMovimientos ventana = new FrmMovimientos();
-            Form1 ventana = new Form1();    
+            frmMovimientos ventana = new frmMovimientos();    
             ventana.ShowDialog();
         }
 
