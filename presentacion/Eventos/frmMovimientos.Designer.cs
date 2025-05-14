@@ -66,6 +66,7 @@
             this.dgvMovimientos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvMovimientos.Size = new System.Drawing.Size(453, 263);
             this.dgvMovimientos.TabIndex = 16;
+            this.dgvMovimientos.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMovimientos_CellDoubleClick);
             // 
             // tbxMovimientosFiltro
             // 
@@ -73,6 +74,7 @@
             this.tbxMovimientosFiltro.Name = "tbxMovimientosFiltro";
             this.tbxMovimientosFiltro.Size = new System.Drawing.Size(292, 20);
             this.tbxMovimientosFiltro.TabIndex = 15;
+            this.tbxMovimientosFiltro.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbxMovimientosFiltro_KeyPress);
             // 
             // lblMovimientosFiltro
             // 

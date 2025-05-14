@@ -30,6 +30,27 @@ namespace presentacion.Eventos
             cargar();
         }
 
+
+        private void filtrarMovimientos()
+        {
+            List<Movimiento> listaFiltrada;
+            string filtro = tbxMovimientosFiltro.Text;
+
+            if(filtro != "")
+            {
+                listaFiltrada = listadoMovimientos.FindAll(ev => ev.Id_Tipo.ToString().Contains(filtro.ToUpper()) || ev.Fecha.ToString().Contains(filtro.ToUpper()) || ev.Persona.ToString().Contains(filtro.ToUpper()) || ev.Interno.ToString().Contains(filtro.ToUpper()) || ev.Furgon.ToString().Contains(filtro.ToUpper()));
+            }
+            else
+            {
+                listaFiltrada = listadoMovimientos;
+            }
+
+            dgvMovimientos.DataSource = null;
+            dgvMovimientos.DataSource = listaFiltrada;
+            ocultarColumnas();
+        }
+
+
         private void cargar()
         {
             MovimientoNegocio negocio = new MovimientoNegocio();
@@ -44,6 +65,20 @@ namespace presentacion.Eventos
             dgvMovimientos.Columns["Cliente"].Visible = false;
             dgvMovimientos.Columns["Destino"].Visible = false;
             dgvMovimientos.Columns["Observaciones"].Visible = false;
+        }
+
+        private void tbxMovimientosFiltro_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            filtrarMovimientos();
+        }
+
+        private void dgvMovimientos_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            Movimiento seleccion = (Movimiento)dgvMovimientos.CurrentRow.DataBoundItem;
+
+            FrmFichaMovimiento ficha = new FrmFichaMovimiento(seleccion);
+            ficha.ShowDialog();
+            cargar();
         }
     }
 }

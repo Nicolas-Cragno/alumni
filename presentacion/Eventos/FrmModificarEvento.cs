@@ -34,6 +34,7 @@ namespace presentacion.Eventos
                 idEvento = evento.Id_Evento;
                 cbxModificarEventoChofer.Text = evento.Persona;
                 cbxModificarEventoInterno.Text = evento.Interno.ToString();
+                cbxModificarEventoFurgon.Text = evento.Furgon.ToString();
                 tbxModificarEventoTipo.Text = evento.Tipo;
                 tbxModificarEventoDetalle.Text = evento.Detalle;
             }
@@ -49,11 +50,12 @@ namespace presentacion.Eventos
                 modifEvento.Id_Evento = evento.Id_Evento;
                 modifEvento.Persona = evento.Persona;
                 modifEvento.Interno = evento.Interno;
+                modifEvento.Furgon = evento.Furgon;
                 modifEvento.Tipo = tbxModificarEventoTipo.Text;
                 modifEvento.Detalle = tbxModificarEventoDetalle.Text;   
 
                 negocio.modificarEvento(modifEvento);
-                MessageBox.Show("Datos Actualizados." + modifEvento.Id_Evento);
+                MessageBox.Show("Datos Actualizados.");
                 Close();
             }
             catch(Exception ex)

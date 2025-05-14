@@ -494,7 +494,7 @@ namespace negocio
         public int buscarIdCliente(string cliente)
         {
             AccesoDatos datos = new AccesoDatos();
-            string queryClientes = "SELECT idCliente FROM cantarini_control_dbo.clientes WHERE nombre = " + cliente + ";";
+            string queryClientes = "SELECT idCliente FROM cantarini_control.dbo.clientes WHERE nombre = '" + cliente + "';";
             int idCliente;
 
             try

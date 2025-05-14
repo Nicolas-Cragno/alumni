@@ -39,6 +39,8 @@
             this.lblModificarEventoInterno = new System.Windows.Forms.Label();
             this.lblModificarEventoTitulo = new System.Windows.Forms.Label();
             this.btnModificarEventoCerrar = new System.Windows.Forms.Button();
+            this.cbxModificarEventoFurgon = new System.Windows.Forms.ComboBox();
+            this.lblModificarEventoFurgon = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnModificarEvento
@@ -94,16 +96,16 @@
             // 
             // tbxModificarEventoDetalle
             // 
-            this.tbxModificarEventoDetalle.Location = new System.Drawing.Point(29, 131);
+            this.tbxModificarEventoDetalle.Location = new System.Drawing.Point(29, 152);
             this.tbxModificarEventoDetalle.Multiline = true;
             this.tbxModificarEventoDetalle.Name = "tbxModificarEventoDetalle";
-            this.tbxModificarEventoDetalle.Size = new System.Drawing.Size(324, 186);
+            this.tbxModificarEventoDetalle.Size = new System.Drawing.Size(324, 165);
             this.tbxModificarEventoDetalle.TabIndex = 88;
             // 
             // lblModificarEventoDetalle
             // 
             this.lblModificarEventoDetalle.AutoSize = true;
-            this.lblModificarEventoDetalle.Location = new System.Drawing.Point(37, 115);
+            this.lblModificarEventoDetalle.Location = new System.Drawing.Point(30, 136);
             this.lblModificarEventoDetalle.Name = "lblModificarEventoDetalle";
             this.lblModificarEventoDetalle.Size = new System.Drawing.Size(40, 13);
             this.lblModificarEventoDetalle.TabIndex = 87;
@@ -139,11 +141,30 @@
             this.btnModificarEventoCerrar.UseVisualStyleBackColor = true;
             this.btnModificarEventoCerrar.Click += new System.EventHandler(this.btnModificarEventoCerrar_Click);
             // 
+            // cbxModificarEventoFurgon
+            // 
+            this.cbxModificarEventoFurgon.FormattingEnabled = true;
+            this.cbxModificarEventoFurgon.Location = new System.Drawing.Point(73, 108);
+            this.cbxModificarEventoFurgon.Name = "cbxModificarEventoFurgon";
+            this.cbxModificarEventoFurgon.Size = new System.Drawing.Size(72, 21);
+            this.cbxModificarEventoFurgon.TabIndex = 97;
+            // 
+            // lblModificarEventoFurgon
+            // 
+            this.lblModificarEventoFurgon.AutoSize = true;
+            this.lblModificarEventoFurgon.Location = new System.Drawing.Point(28, 112);
+            this.lblModificarEventoFurgon.Name = "lblModificarEventoFurgon";
+            this.lblModificarEventoFurgon.Size = new System.Drawing.Size(37, 13);
+            this.lblModificarEventoFurgon.TabIndex = 96;
+            this.lblModificarEventoFurgon.Text = "furgon";
+            // 
             // FrmModificarEvento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(380, 354);
+            this.Controls.Add(this.cbxModificarEventoFurgon);
+            this.Controls.Add(this.lblModificarEventoFurgon);
             this.Controls.Add(this.btnModificarEventoCerrar);
             this.Controls.Add(this.btnModificarEvento);
             this.Controls.Add(this.cbxModificarEventoChofer);
@@ -176,5 +197,7 @@
         private System.Windows.Forms.Label lblModificarEventoInterno;
         private System.Windows.Forms.Label lblModificarEventoTitulo;
         private System.Windows.Forms.Button btnModificarEventoCerrar;
+        private System.Windows.Forms.ComboBox cbxModificarEventoFurgon;
+        private System.Windows.Forms.Label lblModificarEventoFurgon;
     }
 }

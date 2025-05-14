@@ -32,6 +32,7 @@ namespace presentacion.Eventos
             {
                 tbxFichaEventoChofer.Text = evento.Persona;
                 tbxFichaEventoInterno.Text = evento.Interno.ToString();
+                tbxFichaEventoFurgon.Text = evento.Furgon.ToString();
                 tbxFichaEventoFecha.Text = evento.Fecha.ToString();
                 tbxFichaEventoTipo.Text = evento.Tipo;
                 tbxFichaEventoDetalle.Text = evento.Detalle;

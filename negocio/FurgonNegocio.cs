@@ -58,7 +58,7 @@ namespace negocio
             List<int> listaInternos = new List<int>();
             AccesoDatos datos = new AccesoDatos();
 
-            string campoListaInternos = "SELECT interno";
+            string campoListaInternos = "SELECT idFurgon";
             string database = " FROM " + db_furgones + ";";
             string queryInternos = campoListaInternos + database;
 
@@ -69,7 +69,7 @@ namespace negocio
 
                 while (datos.Lector.Read())
                 {
-                    int auxInterno = (int)datos.Lector["interno"];
+                    int auxInterno = (int)datos.Lector["idFurgon"];
 
                     listaInternos.Add(auxInterno);
                 }

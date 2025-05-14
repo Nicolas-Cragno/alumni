@@ -83,20 +83,19 @@ namespace negocio
         public void modificarMovimiento(Movimiento mdMv) 
         { 
             AccesoDatos datos = new AccesoDatos();
-            int dni;
+            int dni, idCliente;
+            idCliente = datos.buscarIdCliente(mdMv.Cliente);
 
             if (mdMv.Persona != "SIN CHOFER ASIGNADO")
             {
                 dni = datos.buscarDniFull(mdMv.Persona);
             }
-            else
-            {
-                dni = 0;
-            }
+            else { dni = 0; }
+
 
             try
             {
-                datos.setearConsulta("UPDATE cantarini_control.dbo.movimientos SET dni=" + dni + ", interno=" + mdMv.Interno + ", idFurgon=" + mdMv.Furgon + ", cliente='" + mdMv.Cliente + "', destino='" + mdMv.Destino + "', observaciones='" + mdMv.Observaciones + "');");
+                datos.setearConsulta("UPDATE cantarini_control.dbo.movimientos SET dni=" + dni + ", interno=" + mdMv.Interno + ", idFurgon=" + mdMv.Furgon + ", idCliente=" + idCliente + ", observaciones='" + mdMv.Observaciones.ToUpper() + "' WHERE idMovimiento=" + mdMv.Id_Movimiento + ";");
                 datos.ejecutarAccion();
             }
             catch(Exception ex) { throw ex; }

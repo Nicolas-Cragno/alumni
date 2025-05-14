@@ -40,6 +40,8 @@
             this.tbxFichaEventoInterno = new System.Windows.Forms.TextBox();
             this.btnFichaEventoEditar = new System.Windows.Forms.Button();
             this.btnFichaEventoCerrar = new System.Windows.Forms.Button();
+            this.tbxFichaEventoFurgon = new System.Windows.Forms.TextBox();
+            this.lblFichaEventoFurgon = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblFichaEventoTipo
@@ -72,7 +74,7 @@
             // lblFichaEventoDetalle
             // 
             this.lblFichaEventoDetalle.AutoSize = true;
-            this.lblFichaEventoDetalle.Location = new System.Drawing.Point(25, 110);
+            this.lblFichaEventoDetalle.Location = new System.Drawing.Point(25, 121);
             this.lblFichaEventoDetalle.Name = "lblFichaEventoDetalle";
             this.lblFichaEventoDetalle.Size = new System.Drawing.Size(38, 13);
             this.lblFichaEventoDetalle.TabIndex = 3;
@@ -105,11 +107,11 @@
             // 
             // tbxFichaEventoDetalle
             // 
-            this.tbxFichaEventoDetalle.Location = new System.Drawing.Point(26, 126);
+            this.tbxFichaEventoDetalle.Location = new System.Drawing.Point(26, 137);
             this.tbxFichaEventoDetalle.Multiline = true;
             this.tbxFichaEventoDetalle.Name = "tbxFichaEventoDetalle";
             this.tbxFichaEventoDetalle.ReadOnly = true;
-            this.tbxFichaEventoDetalle.Size = new System.Drawing.Size(346, 199);
+            this.tbxFichaEventoDetalle.Size = new System.Drawing.Size(346, 188);
             this.tbxFichaEventoDetalle.TabIndex = 7;
             // 
             // tbxFichaEventoChofer
@@ -148,11 +150,30 @@
             this.btnFichaEventoCerrar.UseVisualStyleBackColor = true;
             this.btnFichaEventoCerrar.Click += new System.EventHandler(this.btnFichaEventoCerrar_Click);
             // 
+            // tbxFichaEventoFurgon
+            // 
+            this.tbxFichaEventoFurgon.Location = new System.Drawing.Point(271, 111);
+            this.tbxFichaEventoFurgon.Name = "tbxFichaEventoFurgon";
+            this.tbxFichaEventoFurgon.ReadOnly = true;
+            this.tbxFichaEventoFurgon.Size = new System.Drawing.Size(101, 20);
+            this.tbxFichaEventoFurgon.TabIndex = 13;
+            // 
+            // lblFichaEventoFurgon
+            // 
+            this.lblFichaEventoFurgon.AutoSize = true;
+            this.lblFichaEventoFurgon.Location = new System.Drawing.Point(230, 114);
+            this.lblFichaEventoFurgon.Name = "lblFichaEventoFurgon";
+            this.lblFichaEventoFurgon.Size = new System.Drawing.Size(37, 13);
+            this.lblFichaEventoFurgon.TabIndex = 12;
+            this.lblFichaEventoFurgon.Text = "furgon";
+            // 
             // FrmFichaEvento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(395, 371);
+            this.Controls.Add(this.tbxFichaEventoFurgon);
+            this.Controls.Add(this.lblFichaEventoFurgon);
             this.Controls.Add(this.btnFichaEventoCerrar);
             this.Controls.Add(this.btnFichaEventoEditar);
             this.Controls.Add(this.tbxFichaEventoInterno);
@@ -187,5 +208,7 @@
         private System.Windows.Forms.TextBox tbxFichaEventoInterno;
         private System.Windows.Forms.Button btnFichaEventoEditar;
         private System.Windows.Forms.Button btnFichaEventoCerrar;
+        private System.Windows.Forms.TextBox tbxFichaEventoFurgon;
+        private System.Windows.Forms.Label lblFichaEventoFurgon;
     }
 }
