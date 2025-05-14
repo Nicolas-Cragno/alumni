@@ -38,8 +38,7 @@ namespace negocio
                     auxMovimiento.Persona = datos.buscarChofer(auxDni).ToString();
                     auxMovimiento.Interno = (int)datos.Lector["interno"];
                     auxMovimiento.Furgon = (int)datos.Lector["idFurgon"];
-                    //auxMovimiento.Cliente = datos.buscarCliente(auxCliente).ToString();
-                    auxMovimiento.Cliente = "FALTA PROGRAMAR";
+                    auxMovimiento.Cliente = datos.buscarCliente(auxCliente).ToString();
                     auxMovimiento.Fecha = (DateTime)datos.Lector["fecha"];
                     auxMovimiento.Destino = (string)datos.Lector["destino"];
                     auxMovimiento.Observaciones = (string)datos.Lector["observaciones"];
@@ -59,20 +58,19 @@ namespace negocio
         public void agregarMovimiento(Movimiento nvMv) 
         {
             AccesoDatos datos = new AccesoDatos();
-            int dni;
+            int dni, idCliente;
 
             if (nvMv.Persona != "SIN CHOFER ASIGNADO")
-            {
                 dni = datos.buscarDniFull(nvMv.Persona);
-            }
-            else
-            {
-                dni = 0;
-            }
+            else {dni = 0;}
+
+            if (nvMv.Cliente != "")
+                idCliente = datos.buscarIdCliente(nvMv.Cliente);
+            else { idCliente = 0; }
 
             try
             {
-                datos.setearConsulta("INSERT INTO cantarini_control.dbo.movimientos(idTipo, dni, interno, idFurgon, cliente, fecha, destino, observaciones) VALUES (" + nvMv.Id_Tipo + ", " + dni + ", " + nvMv.Interno + ", " + nvMv.Furgon + ", '" + nvMv.Cliente + "', convert(datetime, getdate()), '" + nvMv.Destino + "', '" + nvMv.Observaciones + "');");
+                datos.setearConsulta("INSERT INTO cantarini_control.dbo.movimientos(idTipo, dni, interno, idFurgon, idCliente, fecha, destino, observaciones) VALUES (" + nvMv.Id_Tipo + ", " + dni + ", " + nvMv.Interno + ", " + nvMv.Furgon + ", '" + idCliente + "', convert(datetime, getdate()), '" + nvMv.Destino + "', '" + nvMv.Observaciones + "');");
                 datos.ejecutarAccion();
             }
             catch(Exception ex)

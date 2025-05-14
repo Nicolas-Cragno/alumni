@@ -44,5 +44,10 @@ namespace presentacion
             FrmEventos ventana = new FrmEventos();
             ventana.ShowDialog();
         }
+
+        private void FrmPrincipal_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

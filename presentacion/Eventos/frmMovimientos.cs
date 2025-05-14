@@ -44,7 +44,6 @@ namespace presentacion.Eventos
             dgvMovimientos.Columns["Cliente"].Visible = false;
             dgvMovimientos.Columns["Destino"].Visible = false;
             dgvMovimientos.Columns["Observaciones"].Visible = false;
-
         }
     }
 }

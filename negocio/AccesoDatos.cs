@@ -491,6 +491,62 @@ namespace negocio
             finally { datos.cerrarConexion(); }
         }
 
+        public int buscarIdCliente(string cliente)
+        {
+            AccesoDatos datos = new AccesoDatos();
+            string queryClientes = "SELECT idCliente FROM cantarini_control_dbo.clientes WHERE nombre = " + cliente + ";";
+            int idCliente;
+
+            try
+            {
+                datos.setearConsulta(queryClientes);
+                datos.ejecutarLectura();
+
+                if (datos.Lector.Read())
+                {
+                    idCliente = (int)datos.Lector["idCliente"];
+                }
+                else
+                {
+                    idCliente = 0;
+                }
+
+                return idCliente;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally { datos.cerrarConexion(); }
+        }
+
+        public string buscarCliente(int idCliente)
+        {
+            AccesoDatos datos = new AccesoDatos();
+            string queryClientes = "SELECT nombre FROM cantarini_control.dbo.clientes WHERE idCliente = " + idCliente + ";";
+            string nombreCliente;
+
+            try
+            {
+                datos.setearConsulta(queryClientes);
+                datos.ejecutarLectura();
+
+                if (datos.Lector.Read())
+                {
+                    nombreCliente = (string)datos.Lector["nombre"];
+                }
+                else
+                {
+                    nombreCliente = "";
+                }
+
+                return nombreCliente;
+            }
+            catch (Exception ex) { throw ex; }
+            finally { datos.cerrarConexion(); }
+
+        }
+
         public SqlDataReader Lector
         {
             get { return lector; } 
