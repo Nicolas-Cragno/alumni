@@ -45,6 +45,13 @@ namespace presentacion.Eventos
                 cbxModificarMovimientoFurgon.DataSource =  furgonNegocio.listarInternos();
                 cbxModificarMovimientoFurgon.Text = movimiento.Furgon.ToString();
                 tbxModificarMovimientoDetalle.Text = movimiento.Observaciones;
+                cbxModificarMovimientoPanico.Checked = movimiento.OK_Panico;
+                cbxModificarMovimientoCorte.Checked = movimiento.OK_Corte;
+                cbxModificarMovimientoReporte.Checked = movimiento.OK_Reporte;
+                cbxModificarMovimientoDesenganche.Checked = movimiento.OK_Desenganche;
+                cbxModificarMovimientoCabina.Checked = movimiento.OK_Cabina;
+                cbxModificarMovimientoAntivandalico.Checked = movimiento.OK_Antiv;
+                cbxModificarMovimientoOkfurgon.Checked = movimiento.OK_Furgon;
             }
         }
 
@@ -61,6 +68,13 @@ namespace presentacion.Eventos
                 modifMovimiento.Furgon = int.Parse(cbxModificarMovimientoFurgon.Text);
                 modifMovimiento.Observaciones = tbxModificarMovimientoDetalle.Text;
                 modifMovimiento.Id_Tipo = movimiento.Id_Tipo;
+                modifMovimiento.OK_Panico = cbxModificarMovimientoPanico.Checked;
+                modifMovimiento.OK_Corte = cbxModificarMovimientoCorte.Checked;
+                modifMovimiento.OK_Reporte = cbxModificarMovimientoReporte.Checked;
+                modifMovimiento.OK_Desenganche = cbxModificarMovimientoDesenganche.Checked;
+                modifMovimiento.OK_Cabina = cbxModificarMovimientoCabina.Checked;
+                modifMovimiento.OK_Antiv = cbxModificarMovimientoAntivandalico.Checked;
+                modifMovimiento.OK_Furgon = cbxModificarMovimientoOkfurgon.Checked;
 
                 negocio.modificarMovimiento(modifMovimiento);
                 MessageBox.Show("Datos actualizados");

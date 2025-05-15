@@ -66,5 +66,10 @@ namespace presentacion.Eventos
         {
             Close();
         }
+
+        private void tbxAgregarEventoTipo_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

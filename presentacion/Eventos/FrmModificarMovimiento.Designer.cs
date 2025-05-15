@@ -40,11 +40,18 @@
             this.cbxModificarMovimientoFurgon = new System.Windows.Forms.ComboBox();
             this.lblModificarMovimientoFurgon = new System.Windows.Forms.Label();
             this.lblModificarMovimientoFecha = new System.Windows.Forms.Label();
+            this.cbxModificarMovimientoOkfurgon = new System.Windows.Forms.CheckBox();
+            this.cbxModificarMovimientoAntivandalico = new System.Windows.Forms.CheckBox();
+            this.cbxModificarMovimientoCabina = new System.Windows.Forms.CheckBox();
+            this.cbxModificarMovimientoDesenganche = new System.Windows.Forms.CheckBox();
+            this.cbxModificarMovimientoReporte = new System.Windows.Forms.CheckBox();
+            this.cbxModificarMovimientoCorte = new System.Windows.Forms.CheckBox();
+            this.cbxModificarMovimientoPanico = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // btnModificarMovimientoCerrar
             // 
-            this.btnModificarMovimientoCerrar.Location = new System.Drawing.Point(279, 323);
+            this.btnModificarMovimientoCerrar.Location = new System.Drawing.Point(259, 389);
             this.btnModificarMovimientoCerrar.Name = "btnModificarMovimientoCerrar";
             this.btnModificarMovimientoCerrar.Size = new System.Drawing.Size(74, 23);
             this.btnModificarMovimientoCerrar.TabIndex = 106;
@@ -54,7 +61,7 @@
             // 
             // btnModificarMovimiento
             // 
-            this.btnModificarMovimiento.Location = new System.Drawing.Point(29, 323);
+            this.btnModificarMovimiento.Location = new System.Drawing.Point(9, 389);
             this.btnModificarMovimiento.Name = "btnModificarMovimiento";
             this.btnModificarMovimiento.Size = new System.Drawing.Size(102, 23);
             this.btnModificarMovimiento.TabIndex = 105;
@@ -65,7 +72,7 @@
             // cbxModificarMovimientoChofer
             // 
             this.cbxModificarMovimientoChofer.FormattingEnabled = true;
-            this.cbxModificarMovimientoChofer.Location = new System.Drawing.Point(73, 80);
+            this.cbxModificarMovimientoChofer.Location = new System.Drawing.Point(9, 104);
             this.cbxModificarMovimientoChofer.Name = "cbxModificarMovimientoChofer";
             this.cbxModificarMovimientoChofer.Size = new System.Drawing.Size(280, 21);
             this.cbxModificarMovimientoChofer.TabIndex = 104;
@@ -74,7 +81,7 @@
             // cbxModificarMovimientoInterno
             // 
             this.cbxModificarMovimientoInterno.FormattingEnabled = true;
-            this.cbxModificarMovimientoInterno.Location = new System.Drawing.Point(73, 108);
+            this.cbxModificarMovimientoInterno.Location = new System.Drawing.Point(9, 147);
             this.cbxModificarMovimientoInterno.Name = "cbxModificarMovimientoInterno";
             this.cbxModificarMovimientoInterno.Size = new System.Drawing.Size(72, 21);
             this.cbxModificarMovimientoInterno.TabIndex = 101;
@@ -83,7 +90,7 @@
             // lblModificarMovimientoDNI
             // 
             this.lblModificarMovimientoDNI.AutoSize = true;
-            this.lblModificarMovimientoDNI.Location = new System.Drawing.Point(30, 83);
+            this.lblModificarMovimientoDNI.Location = new System.Drawing.Point(14, 88);
             this.lblModificarMovimientoDNI.Name = "lblModificarMovimientoDNI";
             this.lblModificarMovimientoDNI.Size = new System.Drawing.Size(37, 13);
             this.lblModificarMovimientoDNI.TabIndex = 100;
@@ -91,16 +98,16 @@
             // 
             // tbxModificarMovimientoDetalle
             // 
-            this.tbxModificarMovimientoDetalle.Location = new System.Drawing.Point(29, 151);
+            this.tbxModificarMovimientoDetalle.Location = new System.Drawing.Point(9, 275);
             this.tbxModificarMovimientoDetalle.Multiline = true;
             this.tbxModificarMovimientoDetalle.Name = "tbxModificarMovimientoDetalle";
-            this.tbxModificarMovimientoDetalle.Size = new System.Drawing.Size(324, 166);
+            this.tbxModificarMovimientoDetalle.Size = new System.Drawing.Size(324, 108);
             this.tbxModificarMovimientoDetalle.TabIndex = 99;
             // 
             // lblModificarMovimientoDetalle
             // 
             this.lblModificarMovimientoDetalle.AutoSize = true;
-            this.lblModificarMovimientoDetalle.Location = new System.Drawing.Point(30, 135);
+            this.lblModificarMovimientoDetalle.Location = new System.Drawing.Point(11, 259);
             this.lblModificarMovimientoDetalle.Name = "lblModificarMovimientoDetalle";
             this.lblModificarMovimientoDetalle.Size = new System.Drawing.Size(40, 13);
             this.lblModificarMovimientoDetalle.TabIndex = 98;
@@ -109,7 +116,7 @@
             // lblModificarMovimientoInterno
             // 
             this.lblModificarMovimientoInterno.AutoSize = true;
-            this.lblModificarMovimientoInterno.Location = new System.Drawing.Point(28, 112);
+            this.lblModificarMovimientoInterno.Location = new System.Drawing.Point(14, 131);
             this.lblModificarMovimientoInterno.Name = "lblModificarMovimientoInterno";
             this.lblModificarMovimientoInterno.Size = new System.Drawing.Size(39, 13);
             this.lblModificarMovimientoInterno.TabIndex = 97;
@@ -119,7 +126,7 @@
             // 
             this.lblModificarMovimientoTitulo.AutoSize = true;
             this.lblModificarMovimientoTitulo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblModificarMovimientoTitulo.Location = new System.Drawing.Point(24, 9);
+            this.lblModificarMovimientoTitulo.Location = new System.Drawing.Point(12, 9);
             this.lblModificarMovimientoTitulo.Name = "lblModificarMovimientoTitulo";
             this.lblModificarMovimientoTitulo.Size = new System.Drawing.Size(273, 28);
             this.lblModificarMovimientoTitulo.TabIndex = 96;
@@ -128,7 +135,7 @@
             // cbxModificarMovimientoFurgon
             // 
             this.cbxModificarMovimientoFurgon.FormattingEnabled = true;
-            this.cbxModificarMovimientoFurgon.Location = new System.Drawing.Point(279, 108);
+            this.cbxModificarMovimientoFurgon.Location = new System.Drawing.Point(87, 147);
             this.cbxModificarMovimientoFurgon.Name = "cbxModificarMovimientoFurgon";
             this.cbxModificarMovimientoFurgon.Size = new System.Drawing.Size(72, 21);
             this.cbxModificarMovimientoFurgon.TabIndex = 108;
@@ -137,7 +144,7 @@
             // lblModificarMovimientoFurgon
             // 
             this.lblModificarMovimientoFurgon.AutoSize = true;
-            this.lblModificarMovimientoFurgon.Location = new System.Drawing.Point(234, 112);
+            this.lblModificarMovimientoFurgon.Location = new System.Drawing.Point(94, 131);
             this.lblModificarMovimientoFurgon.Name = "lblModificarMovimientoFurgon";
             this.lblModificarMovimientoFurgon.Size = new System.Drawing.Size(37, 13);
             this.lblModificarMovimientoFurgon.TabIndex = 107;
@@ -147,17 +154,94 @@
             // 
             this.lblModificarMovimientoFecha.AutoSize = true;
             this.lblModificarMovimientoFecha.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblModificarMovimientoFecha.Location = new System.Drawing.Point(40, 37);
+            this.lblModificarMovimientoFecha.Location = new System.Drawing.Point(14, 37);
             this.lblModificarMovimientoFecha.Name = "lblModificarMovimientoFecha";
             this.lblModificarMovimientoFecha.Size = new System.Drawing.Size(186, 18);
             this.lblModificarMovimientoFecha.TabIndex = 109;
             this.lblModificarMovimientoFecha.Text = "Edición de movimiento";
             // 
+            // cbxModificarMovimientoOkfurgon
+            // 
+            this.cbxModificarMovimientoOkfurgon.AutoSize = true;
+            this.cbxModificarMovimientoOkfurgon.Location = new System.Drawing.Point(9, 230);
+            this.cbxModificarMovimientoOkfurgon.Name = "cbxModificarMovimientoOkfurgon";
+            this.cbxModificarMovimientoOkfurgon.Size = new System.Drawing.Size(59, 17);
+            this.cbxModificarMovimientoOkfurgon.TabIndex = 135;
+            this.cbxModificarMovimientoOkfurgon.Text = "Furgon";
+            this.cbxModificarMovimientoOkfurgon.UseVisualStyleBackColor = true;
+            // 
+            // cbxModificarMovimientoAntivandalico
+            // 
+            this.cbxModificarMovimientoAntivandalico.AutoSize = true;
+            this.cbxModificarMovimientoAntivandalico.Location = new System.Drawing.Point(196, 207);
+            this.cbxModificarMovimientoAntivandalico.Name = "cbxModificarMovimientoAntivandalico";
+            this.cbxModificarMovimientoAntivandalico.Size = new System.Drawing.Size(90, 17);
+            this.cbxModificarMovimientoAntivandalico.TabIndex = 134;
+            this.cbxModificarMovimientoAntivandalico.Text = "Antivandalico";
+            this.cbxModificarMovimientoAntivandalico.UseVisualStyleBackColor = true;
+            // 
+            // cbxModificarMovimientoCabina
+            // 
+            this.cbxModificarMovimientoCabina.AutoSize = true;
+            this.cbxModificarMovimientoCabina.Location = new System.Drawing.Point(196, 184);
+            this.cbxModificarMovimientoCabina.Name = "cbxModificarMovimientoCabina";
+            this.cbxModificarMovimientoCabina.Size = new System.Drawing.Size(59, 17);
+            this.cbxModificarMovimientoCabina.TabIndex = 133;
+            this.cbxModificarMovimientoCabina.Text = "Cabina";
+            this.cbxModificarMovimientoCabina.UseVisualStyleBackColor = true;
+            // 
+            // cbxModificarMovimientoDesenganche
+            // 
+            this.cbxModificarMovimientoDesenganche.AutoSize = true;
+            this.cbxModificarMovimientoDesenganche.Location = new System.Drawing.Point(91, 207);
+            this.cbxModificarMovimientoDesenganche.Name = "cbxModificarMovimientoDesenganche";
+            this.cbxModificarMovimientoDesenganche.Size = new System.Drawing.Size(93, 17);
+            this.cbxModificarMovimientoDesenganche.TabIndex = 132;
+            this.cbxModificarMovimientoDesenganche.Text = "Desenganche";
+            this.cbxModificarMovimientoDesenganche.UseVisualStyleBackColor = true;
+            // 
+            // cbxModificarMovimientoReporte
+            // 
+            this.cbxModificarMovimientoReporte.AutoSize = true;
+            this.cbxModificarMovimientoReporte.Location = new System.Drawing.Point(91, 184);
+            this.cbxModificarMovimientoReporte.Name = "cbxModificarMovimientoReporte";
+            this.cbxModificarMovimientoReporte.Size = new System.Drawing.Size(64, 17);
+            this.cbxModificarMovimientoReporte.TabIndex = 131;
+            this.cbxModificarMovimientoReporte.Text = "Reporte";
+            this.cbxModificarMovimientoReporte.UseVisualStyleBackColor = true;
+            // 
+            // cbxModificarMovimientoCorte
+            // 
+            this.cbxModificarMovimientoCorte.AutoSize = true;
+            this.cbxModificarMovimientoCorte.Location = new System.Drawing.Point(9, 207);
+            this.cbxModificarMovimientoCorte.Name = "cbxModificarMovimientoCorte";
+            this.cbxModificarMovimientoCorte.Size = new System.Drawing.Size(51, 17);
+            this.cbxModificarMovimientoCorte.TabIndex = 130;
+            this.cbxModificarMovimientoCorte.Text = "Corte";
+            this.cbxModificarMovimientoCorte.UseVisualStyleBackColor = true;
+            // 
+            // cbxModificarMovimientoPanico
+            // 
+            this.cbxModificarMovimientoPanico.AutoSize = true;
+            this.cbxModificarMovimientoPanico.Location = new System.Drawing.Point(9, 184);
+            this.cbxModificarMovimientoPanico.Name = "cbxModificarMovimientoPanico";
+            this.cbxModificarMovimientoPanico.Size = new System.Drawing.Size(59, 17);
+            this.cbxModificarMovimientoPanico.TabIndex = 129;
+            this.cbxModificarMovimientoPanico.Text = "Panico";
+            this.cbxModificarMovimientoPanico.UseVisualStyleBackColor = true;
+            // 
             // FrmModificarMovimiento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(380, 354);
+            this.ClientSize = new System.Drawing.Size(352, 424);
+            this.Controls.Add(this.cbxModificarMovimientoOkfurgon);
+            this.Controls.Add(this.cbxModificarMovimientoAntivandalico);
+            this.Controls.Add(this.cbxModificarMovimientoCabina);
+            this.Controls.Add(this.cbxModificarMovimientoDesenganche);
+            this.Controls.Add(this.cbxModificarMovimientoReporte);
+            this.Controls.Add(this.cbxModificarMovimientoCorte);
+            this.Controls.Add(this.cbxModificarMovimientoPanico);
             this.Controls.Add(this.lblModificarMovimientoFecha);
             this.Controls.Add(this.cbxModificarMovimientoFurgon);
             this.Controls.Add(this.lblModificarMovimientoFurgon);
@@ -192,5 +276,12 @@
         private System.Windows.Forms.ComboBox cbxModificarMovimientoFurgon;
         private System.Windows.Forms.Label lblModificarMovimientoFurgon;
         private System.Windows.Forms.Label lblModificarMovimientoFecha;
+        private System.Windows.Forms.CheckBox cbxModificarMovimientoOkfurgon;
+        private System.Windows.Forms.CheckBox cbxModificarMovimientoAntivandalico;
+        private System.Windows.Forms.CheckBox cbxModificarMovimientoCabina;
+        private System.Windows.Forms.CheckBox cbxModificarMovimientoDesenganche;
+        private System.Windows.Forms.CheckBox cbxModificarMovimientoReporte;
+        private System.Windows.Forms.CheckBox cbxModificarMovimientoCorte;
+        private System.Windows.Forms.CheckBox cbxModificarMovimientoPanico;
     }
 }

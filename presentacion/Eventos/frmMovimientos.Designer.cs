@@ -55,6 +55,7 @@
             this.btnMovimientosNuevo.TabIndex = 17;
             this.btnMovimientosNuevo.Text = "Agregar Nuevo";
             this.btnMovimientosNuevo.UseVisualStyleBackColor = true;
+            this.btnMovimientosNuevo.Click += new System.EventHandler(this.btnMovimientosNuevo_Click);
             // 
             // dgvMovimientos
             // 

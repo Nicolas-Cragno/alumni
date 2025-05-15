@@ -18,11 +18,12 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <OutputPath>.\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>5</WarningLevel>
     <Prefer32Bit>true</Prefer32Bit>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -34,8 +35,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>
-    </StartupObject>
+    <StartupObject>presentacion.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -86,6 +86,12 @@
     </Compile>
     <Compile Include="Eventos\FrmAgregarEvento.Designer.cs">
       <DependentUpon>FrmAgregarEvento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Eventos\FrmAgregarMovimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eventos\FrmAgregarMovimiento.Designer.cs">
+      <DependentUpon>FrmAgregarMovimiento.cs</DependentUpon>
     </Compile>
     <Compile Include="Eventos\FrmEventos.cs">
       <SubType>Form</SubType>
@@ -196,6 +202,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Eventos\FrmAgregarEvento.resx">
       <DependentUpon>FrmAgregarEvento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Eventos\FrmAgregarMovimiento.resx">
+      <DependentUpon>FrmAgregarMovimiento.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Eventos\FrmEventos.resx">
       <DependentUpon>FrmEventos.cs</DependentUpon>

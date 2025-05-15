@@ -100,6 +100,7 @@
             this.tbxAgregarEventoTipo.Name = "tbxAgregarEventoTipo";
             this.tbxAgregarEventoTipo.Size = new System.Drawing.Size(167, 20);
             this.tbxAgregarEventoTipo.TabIndex = 82;
+            this.tbxAgregarEventoTipo.TextChanged += new System.EventHandler(this.tbxAgregarEventoTipo_TextChanged);
             // 
             // lblAgregarEventoTipo
             // 

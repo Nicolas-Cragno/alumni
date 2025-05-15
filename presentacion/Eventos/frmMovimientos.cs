@@ -80,5 +80,12 @@ namespace presentacion.Eventos
             ficha.ShowDialog();
             cargar();
         }
+
+        private void btnMovimientosNuevo_Click(object sender, EventArgs e)
+        {
+            FrmAgregarMovimiento ventana = new FrmAgregarMovimiento();
+            ventana.ShowDialog();
+            cargar();
+        }
     }
 }
