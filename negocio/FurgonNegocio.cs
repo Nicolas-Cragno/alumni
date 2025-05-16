@@ -36,7 +36,7 @@ namespace negocio
                     auxFurgon.Dominio = (string)datos.Lector["dominio"];
                     auxFurgon.Activo = (bool)datos.Lector["activo"];
                     auxFurgon.OK_Taller = (bool)datos.Lector["okTaller"];
-                    auxFurgon.Observaciones = (string)datos.Lector["observaciones"];
+                    auxFurgon.Observaciones = (string)datos.Lector["observaciones"].ToString();
 
                     listaFurgones.Add(auxFurgon);
                 }

@@ -87,12 +87,6 @@
     <Compile Include="Eventos\FrmAgregarEvento.Designer.cs">
       <DependentUpon>FrmAgregarEvento.cs</DependentUpon>
     </Compile>
-    <Compile Include="Eventos\FrmAgregarMovimiento.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Eventos\FrmAgregarMovimiento.Designer.cs">
-      <DependentUpon>FrmAgregarMovimiento.cs</DependentUpon>
-    </Compile>
     <Compile Include="Eventos\FrmEventos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,29 +99,11 @@
     <Compile Include="Eventos\FrmFichaEvento.Designer.cs">
       <DependentUpon>FrmFichaEvento.cs</DependentUpon>
     </Compile>
-    <Compile Include="Eventos\FrmFichaMovimiento.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Eventos\FrmFichaMovimiento.Designer.cs">
-      <DependentUpon>FrmFichaMovimiento.cs</DependentUpon>
-    </Compile>
     <Compile Include="Eventos\FrmModificarEvento.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Eventos\FrmModificarEvento.Designer.cs">
       <DependentUpon>FrmModificarEvento.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Eventos\FrmModificarMovimiento.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Eventos\FrmModificarMovimiento.Designer.cs">
-      <DependentUpon>FrmModificarMovimiento.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Eventos\frmMovimientos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Eventos\frmMovimientos.Designer.cs">
-      <DependentUpon>frmMovimientos.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -158,6 +134,30 @@
     </Compile>
     <Compile Include="Furgones\frmModificarFurgon.Designer.cs">
       <DependentUpon>frmModificarFurgon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimientos\FrmAgregarMovimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimientos\FrmAgregarMovimiento.Designer.cs">
+      <DependentUpon>FrmAgregarMovimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimientos\FrmFichaMovimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimientos\FrmFichaMovimiento.Designer.cs">
+      <DependentUpon>FrmFichaMovimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimientos\FrmModificarMovimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimientos\FrmModificarMovimiento.Designer.cs">
+      <DependentUpon>FrmModificarMovimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimientos\frmMovimientos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimientos\frmMovimientos.Designer.cs">
+      <DependentUpon>frmMovimientos.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -203,26 +203,14 @@
     <EmbeddedResource Include="Eventos\FrmAgregarEvento.resx">
       <DependentUpon>FrmAgregarEvento.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Eventos\FrmAgregarMovimiento.resx">
-      <DependentUpon>FrmAgregarMovimiento.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Eventos\FrmEventos.resx">
       <DependentUpon>FrmEventos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Eventos\FrmFichaEvento.resx">
       <DependentUpon>FrmFichaEvento.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Eventos\FrmFichaMovimiento.resx">
-      <DependentUpon>FrmFichaMovimiento.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Eventos\FrmModificarEvento.resx">
       <DependentUpon>FrmModificarEvento.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Eventos\FrmModificarMovimiento.resx">
-      <DependentUpon>FrmModificarMovimiento.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Eventos\frmMovimientos.resx">
-      <DependentUpon>frmMovimientos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -238,6 +226,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Furgones\frmModificarFurgon.resx">
       <DependentUpon>frmModificarFurgon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimientos\FrmAgregarMovimiento.resx">
+      <DependentUpon>FrmAgregarMovimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimientos\FrmFichaMovimiento.resx">
+      <DependentUpon>FrmFichaMovimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimientos\FrmModificarMovimiento.resx">
+      <DependentUpon>FrmModificarMovimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimientos\frmMovimientos.resx">
+      <DependentUpon>frmMovimientos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -282,6 +282,10 @@
       <Project>{40adc42d-f3cb-4c22-994e-4194e311a924}</Project>
       <Name>negocio</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Clientes\" />
+    <Folder Include="Viajes\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
