@@ -101,10 +101,10 @@
             // lblEventoChoferTitulo
             // 
             this.lblEventoChoferTitulo.AutoSize = true;
-            this.lblEventoChoferTitulo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEventoChoferTitulo.Location = new System.Drawing.Point(86, 8);
+            this.lblEventoChoferTitulo.Font = new System.Drawing.Font("Consolas", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEventoChoferTitulo.Location = new System.Drawing.Point(87, 8);
             this.lblEventoChoferTitulo.Name = "lblEventoChoferTitulo";
-            this.lblEventoChoferTitulo.Size = new System.Drawing.Size(211, 33);
+            this.lblEventoChoferTitulo.Size = new System.Drawing.Size(207, 34);
             this.lblEventoChoferTitulo.TabIndex = 85;
             this.lblEventoChoferTitulo.Text = "Nuevo Evento";
             // 

@@ -103,10 +103,10 @@
             // lblModificarFurgonTitulo
             // 
             this.lblModificarFurgonTitulo.AutoSize = true;
-            this.lblModificarFurgonTitulo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblModificarFurgonTitulo.Location = new System.Drawing.Point(117, 9);
+            this.lblModificarFurgonTitulo.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblModificarFurgonTitulo.Location = new System.Drawing.Point(114, 9);
             this.lblModificarFurgonTitulo.Name = "lblModificarFurgonTitulo";
-            this.lblModificarFurgonTitulo.Size = new System.Drawing.Size(121, 18);
+            this.lblModificarFurgonTitulo.Size = new System.Drawing.Size(126, 19);
             this.lblModificarFurgonTitulo.TabIndex = 110;
             this.lblModificarFurgonTitulo.Text = "INT - DOMINIO";
             this.lblModificarFurgonTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;

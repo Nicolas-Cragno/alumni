@@ -58,10 +58,10 @@
             // lblFichaChoferTitulo
             // 
             this.lblFichaChoferTitulo.AutoSize = true;
-            this.lblFichaChoferTitulo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFichaChoferTitulo.Font = new System.Drawing.Font("Consolas", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFichaChoferTitulo.Location = new System.Drawing.Point(22, 27);
             this.lblFichaChoferTitulo.Name = "lblFichaChoferTitulo";
-            this.lblFichaChoferTitulo.Size = new System.Drawing.Size(235, 33);
+            this.lblFichaChoferTitulo.Size = new System.Drawing.Size(255, 34);
             this.lblFichaChoferTitulo.TabIndex = 0;
             this.lblFichaChoferTitulo.Text = "Ficha de chofer";
             // 
@@ -215,10 +215,10 @@
             // lblFichaChoferEventoTitulo
             // 
             this.lblFichaChoferEventoTitulo.AutoSize = true;
-            this.lblFichaChoferEventoTitulo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFichaChoferEventoTitulo.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFichaChoferEventoTitulo.Location = new System.Drawing.Point(396, 78);
             this.lblFichaChoferEventoTitulo.Name = "lblFichaChoferEventoTitulo";
-            this.lblFichaChoferEventoTitulo.Size = new System.Drawing.Size(228, 24);
+            this.lblFichaChoferEventoTitulo.Size = new System.Drawing.Size(250, 24);
             this.lblFichaChoferEventoTitulo.TabIndex = 20;
             this.lblFichaChoferEventoTitulo.Text = "Eventos relacionados";
             // 

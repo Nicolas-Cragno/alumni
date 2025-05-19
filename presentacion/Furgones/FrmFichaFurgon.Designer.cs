@@ -116,10 +116,10 @@
             // lblFichaFurgonEventosTitulo
             // 
             this.lblFichaFurgonEventosTitulo.AutoSize = true;
-            this.lblFichaFurgonEventosTitulo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFichaFurgonEventosTitulo.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFichaFurgonEventosTitulo.Location = new System.Drawing.Point(313, 60);
             this.lblFichaFurgonEventosTitulo.Name = "lblFichaFurgonEventosTitulo";
-            this.lblFichaFurgonEventosTitulo.Size = new System.Drawing.Size(228, 24);
+            this.lblFichaFurgonEventosTitulo.Size = new System.Drawing.Size(250, 24);
             this.lblFichaFurgonEventosTitulo.TabIndex = 101;
             this.lblFichaFurgonEventosTitulo.Text = "Eventos relacionados";
             // 
@@ -205,10 +205,10 @@
             // lblFichaFurgonTitulo
             // 
             this.lblFichaFurgonTitulo.AutoSize = true;
-            this.lblFichaFurgonTitulo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFichaFurgonTitulo.Font = new System.Drawing.Font("Consolas", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFichaFurgonTitulo.Location = new System.Drawing.Point(21, 20);
             this.lblFichaFurgonTitulo.Name = "lblFichaFurgonTitulo";
-            this.lblFichaFurgonTitulo.Size = new System.Drawing.Size(245, 33);
+            this.lblFichaFurgonTitulo.Size = new System.Drawing.Size(271, 34);
             this.lblFichaFurgonTitulo.TabIndex = 87;
             this.lblFichaFurgonTitulo.Text = "Ficha del furgón";
             // 

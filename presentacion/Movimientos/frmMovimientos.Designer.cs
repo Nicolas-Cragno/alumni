@@ -39,7 +39,7 @@
             // 
             // btnMovimientosClose
             // 
-            this.btnMovimientosClose.Location = new System.Drawing.Point(423, 387);
+            this.btnMovimientosClose.Location = new System.Drawing.Point(581, 376);
             this.btnMovimientosClose.Name = "btnMovimientosClose";
             this.btnMovimientosClose.Size = new System.Drawing.Size(51, 23);
             this.btnMovimientosClose.TabIndex = 18;
@@ -49,7 +49,7 @@
             // 
             // btnMovimientosNuevo
             // 
-            this.btnMovimientosNuevo.Location = new System.Drawing.Point(382, 78);
+            this.btnMovimientosNuevo.Location = new System.Drawing.Point(540, 78);
             this.btnMovimientosNuevo.Name = "btnMovimientosNuevo";
             this.btnMovimientosNuevo.Size = new System.Drawing.Size(92, 23);
             this.btnMovimientosNuevo.TabIndex = 17;
@@ -61,17 +61,17 @@
             // 
             this.dgvMovimientos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvMovimientos.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.dgvMovimientos.Location = new System.Drawing.Point(34, 107);
+            this.dgvMovimientos.Location = new System.Drawing.Point(12, 107);
             this.dgvMovimientos.MultiSelect = false;
             this.dgvMovimientos.Name = "dgvMovimientos";
             this.dgvMovimientos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvMovimientos.Size = new System.Drawing.Size(453, 263);
+            this.dgvMovimientos.Size = new System.Drawing.Size(620, 263);
             this.dgvMovimientos.TabIndex = 16;
             this.dgvMovimientos.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMovimientos_CellDoubleClick);
             // 
             // tbxMovimientosFiltro
             // 
-            this.tbxMovimientosFiltro.Location = new System.Drawing.Point(81, 81);
+            this.tbxMovimientosFiltro.Location = new System.Drawing.Point(54, 80);
             this.tbxMovimientosFiltro.Name = "tbxMovimientosFiltro";
             this.tbxMovimientosFiltro.Size = new System.Drawing.Size(292, 20);
             this.tbxMovimientosFiltro.TabIndex = 15;
@@ -81,7 +81,7 @@
             // 
             this.lblMovimientosFiltro.AutoSize = true;
             this.lblMovimientosFiltro.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMovimientosFiltro.Location = new System.Drawing.Point(41, 85);
+            this.lblMovimientosFiltro.Location = new System.Drawing.Point(14, 84);
             this.lblMovimientosFiltro.Name = "lblMovimientosFiltro";
             this.lblMovimientosFiltro.Size = new System.Drawing.Size(34, 12);
             this.lblMovimientosFiltro.TabIndex = 14;
@@ -90,10 +90,10 @@
             // lblMovimientosTitulo
             // 
             this.lblMovimientosTitulo.AutoSize = true;
-            this.lblMovimientosTitulo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMovimientosTitulo.Location = new System.Drawing.Point(148, 24);
+            this.lblMovimientosTitulo.Font = new System.Drawing.Font("Consolas", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMovimientosTitulo.Location = new System.Drawing.Point(227, 24);
             this.lblMovimientosTitulo.Name = "lblMovimientosTitulo";
-            this.lblMovimientosTitulo.Size = new System.Drawing.Size(225, 33);
+            this.lblMovimientosTitulo.Size = new System.Drawing.Size(191, 34);
             this.lblMovimientosTitulo.TabIndex = 13;
             this.lblMovimientosTitulo.Text = "MOVIMIENTOS";
             // 
@@ -101,15 +101,19 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(521, 422);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.ClientSize = new System.Drawing.Size(644, 411);
             this.Controls.Add(this.btnMovimientosClose);
             this.Controls.Add(this.btnMovimientosNuevo);
             this.Controls.Add(this.dgvMovimientos);
             this.Controls.Add(this.tbxMovimientosFiltro);
             this.Controls.Add(this.lblMovimientosFiltro);
             this.Controls.Add(this.lblMovimientosTitulo);
+            this.MinimizeBox = false;
             this.Name = "frmMovimientos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmMovimientos";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmMovimientos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvMovimientos)).EndInit();
             this.ResumeLayout(false);

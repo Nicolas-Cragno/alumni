@@ -51,10 +51,10 @@
             this.tbxFichaTractorEstado = new System.Windows.Forms.TextBox();
             this.lblFichaTractorEstado = new System.Windows.Forms.Label();
             this.gpxFichaTractorSatelital = new System.Windows.Forms.GroupBox();
+            this.tbxFichaTractorSatCb = new System.Windows.Forms.TextBox();
+            this.tbxFichaTractorSatUb = new System.Windows.Forms.TextBox();
             this.lblFichaTractorSatCb = new System.Windows.Forms.Label();
             this.lblFichaTractorSatUb = new System.Windows.Forms.Label();
-            this.tbxFichaTractorSatUb = new System.Windows.Forms.TextBox();
-            this.tbxFichaTractorSatCb = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFichaTractorEventos)).BeginInit();
             this.gpxFichaTractorSatelital.SuspendLayout();
             this.SuspendLayout();
@@ -109,10 +109,10 @@
             // lblFichaTractorEventosTitulo
             // 
             this.lblFichaTractorEventosTitulo.AutoSize = true;
-            this.lblFichaTractorEventosTitulo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFichaTractorEventosTitulo.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFichaTractorEventosTitulo.Location = new System.Drawing.Point(312, 67);
             this.lblFichaTractorEventosTitulo.Name = "lblFichaTractorEventosTitulo";
-            this.lblFichaTractorEventosTitulo.Size = new System.Drawing.Size(228, 24);
+            this.lblFichaTractorEventosTitulo.Size = new System.Drawing.Size(250, 24);
             this.lblFichaTractorEventosTitulo.TabIndex = 44;
             this.lblFichaTractorEventosTitulo.Text = "Eventos relacionados";
             // 
@@ -232,10 +232,10 @@
             // lblFichaTractorTitulo
             // 
             this.lblFichaTractorTitulo.AutoSize = true;
-            this.lblFichaTractorTitulo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFichaTractorTitulo.Font = new System.Drawing.Font("Consolas", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFichaTractorTitulo.Location = new System.Drawing.Point(20, 27);
             this.lblFichaTractorTitulo.Name = "lblFichaTractorTitulo";
-            this.lblFichaTractorTitulo.Size = new System.Drawing.Size(248, 33);
+            this.lblFichaTractorTitulo.Size = new System.Drawing.Size(287, 34);
             this.lblFichaTractorTitulo.TabIndex = 26;
             this.lblFichaTractorTitulo.Text = "Ficha del tractor";
             // 
@@ -269,6 +269,22 @@
             this.gpxFichaTractorSatelital.TabStop = false;
             this.gpxFichaTractorSatelital.Text = "Satelital";
             // 
+            // tbxFichaTractorSatCb
+            // 
+            this.tbxFichaTractorSatCb.Location = new System.Drawing.Point(70, 49);
+            this.tbxFichaTractorSatCb.Name = "tbxFichaTractorSatCb";
+            this.tbxFichaTractorSatCb.ReadOnly = true;
+            this.tbxFichaTractorSatCb.Size = new System.Drawing.Size(157, 20);
+            this.tbxFichaTractorSatCb.TabIndex = 85;
+            // 
+            // tbxFichaTractorSatUb
+            // 
+            this.tbxFichaTractorSatUb.Location = new System.Drawing.Point(70, 19);
+            this.tbxFichaTractorSatUb.Name = "tbxFichaTractorSatUb";
+            this.tbxFichaTractorSatUb.ReadOnly = true;
+            this.tbxFichaTractorSatUb.Size = new System.Drawing.Size(157, 20);
+            this.tbxFichaTractorSatUb.TabIndex = 84;
+            // 
             // lblFichaTractorSatCb
             // 
             this.lblFichaTractorSatCb.AutoSize = true;
@@ -286,22 +302,6 @@
             this.lblFichaTractorSatUb.Size = new System.Drawing.Size(53, 13);
             this.lblFichaTractorSatUb.TabIndex = 73;
             this.lblFichaTractorSatUb.Text = "ubicación";
-            // 
-            // tbxFichaTractorSatUb
-            // 
-            this.tbxFichaTractorSatUb.Location = new System.Drawing.Point(70, 19);
-            this.tbxFichaTractorSatUb.Name = "tbxFichaTractorSatUb";
-            this.tbxFichaTractorSatUb.ReadOnly = true;
-            this.tbxFichaTractorSatUb.Size = new System.Drawing.Size(157, 20);
-            this.tbxFichaTractorSatUb.TabIndex = 84;
-            // 
-            // tbxFichaTractorSatCb
-            // 
-            this.tbxFichaTractorSatCb.Location = new System.Drawing.Point(70, 49);
-            this.tbxFichaTractorSatCb.Name = "tbxFichaTractorSatCb";
-            this.tbxFichaTractorSatCb.ReadOnly = true;
-            this.tbxFichaTractorSatCb.Size = new System.Drawing.Size(157, 20);
-            this.tbxFichaTractorSatCb.TabIndex = 85;
             // 
             // FrmFichaTractor
             // 

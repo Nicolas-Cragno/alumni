@@ -199,10 +199,10 @@
             // lblModificarTractorTitulo
             // 
             this.lblModificarTractorTitulo.AutoSize = true;
-            this.lblModificarTractorTitulo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblModificarTractorTitulo.Location = new System.Drawing.Point(134, 9);
+            this.lblModificarTractorTitulo.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblModificarTractorTitulo.Location = new System.Drawing.Point(127, 9);
             this.lblModificarTractorTitulo.Name = "lblModificarTractorTitulo";
-            this.lblModificarTractorTitulo.Size = new System.Drawing.Size(121, 18);
+            this.lblModificarTractorTitulo.Size = new System.Drawing.Size(126, 19);
             this.lblModificarTractorTitulo.TabIndex = 47;
             this.lblModificarTractorTitulo.Text = "INT - DOMINIO";
             this.lblModificarTractorTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;

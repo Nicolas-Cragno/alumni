@@ -135,10 +135,10 @@
             // lblFichaMovimientoTitulo
             // 
             this.lblFichaMovimientoTitulo.AutoSize = true;
-            this.lblFichaMovimientoTitulo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFichaMovimientoTitulo.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFichaMovimientoTitulo.Location = new System.Drawing.Point(12, 9);
             this.lblFichaMovimientoTitulo.Name = "lblFichaMovimientoTitulo";
-            this.lblFichaMovimientoTitulo.Size = new System.Drawing.Size(156, 24);
+            this.lblFichaMovimientoTitulo.Size = new System.Drawing.Size(154, 24);
             this.lblFichaMovimientoTitulo.TabIndex = 24;
             this.lblFichaMovimientoTitulo.Text = "TIPO DE MOV.";
             // 

@@ -144,10 +144,10 @@
             // lblAgregarMovimientoTitulo
             // 
             this.lblAgregarMovimientoTitulo.AutoSize = true;
-            this.lblAgregarMovimientoTitulo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAgregarMovimientoTitulo.Location = new System.Drawing.Point(12, 9);
+            this.lblAgregarMovimientoTitulo.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAgregarMovimientoTitulo.Location = new System.Drawing.Point(44, 9);
             this.lblAgregarMovimientoTitulo.Name = "lblAgregarMovimientoTitulo";
-            this.lblAgregarMovimientoTitulo.Size = new System.Drawing.Size(223, 28);
+            this.lblAgregarMovimientoTitulo.Size = new System.Drawing.Size(220, 28);
             this.lblAgregarMovimientoTitulo.TabIndex = 110;
             this.lblAgregarMovimientoTitulo.Text = "Nuevo Movimiento";
             // 

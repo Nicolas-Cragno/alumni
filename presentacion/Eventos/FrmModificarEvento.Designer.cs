@@ -123,10 +123,10 @@
             // lblModificarEventoTitulo
             // 
             this.lblModificarEventoTitulo.AutoSize = true;
-            this.lblModificarEventoTitulo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblModificarEventoTitulo.Location = new System.Drawing.Point(57, 8);
+            this.lblModificarEventoTitulo.Font = new System.Drawing.Font("Consolas", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblModificarEventoTitulo.Location = new System.Drawing.Point(47, 8);
             this.lblModificarEventoTitulo.Name = "lblModificarEventoTitulo";
-            this.lblModificarEventoTitulo.Size = new System.Drawing.Size(266, 33);
+            this.lblModificarEventoTitulo.Size = new System.Drawing.Size(287, 34);
             this.lblModificarEventoTitulo.TabIndex = 85;
             this.lblModificarEventoTitulo.Text = "Edición de evento";
             this.lblModificarEventoTitulo.Click += new System.EventHandler(this.lblModificarEventoTitulo_Click);

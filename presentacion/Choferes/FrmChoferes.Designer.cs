@@ -40,10 +40,10 @@
             // lblChoferesTitulo
             // 
             this.lblChoferesTitulo.AutoSize = true;
-            this.lblChoferesTitulo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblChoferesTitulo.Location = new System.Drawing.Point(172, 24);
+            this.lblChoferesTitulo.Font = new System.Drawing.Font("Consolas", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblChoferesTitulo.Location = new System.Drawing.Point(251, 24);
             this.lblChoferesTitulo.Name = "lblChoferesTitulo";
-            this.lblChoferesTitulo.Size = new System.Drawing.Size(177, 33);
+            this.lblChoferesTitulo.Size = new System.Drawing.Size(143, 34);
             this.lblChoferesTitulo.TabIndex = 0;
             this.lblChoferesTitulo.Text = "CHOFERES";
             // 
@@ -51,7 +51,7 @@
             // 
             this.lblChoferesFiltro.AutoSize = true;
             this.lblChoferesFiltro.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblChoferesFiltro.Location = new System.Drawing.Point(44, 85);
+            this.lblChoferesFiltro.Location = new System.Drawing.Point(10, 85);
             this.lblChoferesFiltro.Name = "lblChoferesFiltro";
             this.lblChoferesFiltro.Size = new System.Drawing.Size(34, 12);
             this.lblChoferesFiltro.TabIndex = 1;
@@ -59,9 +59,9 @@
             // 
             // tbxChoferesFiltro
             // 
-            this.tbxChoferesFiltro.Location = new System.Drawing.Point(84, 81);
+            this.tbxChoferesFiltro.Location = new System.Drawing.Point(50, 81);
             this.tbxChoferesFiltro.Name = "tbxChoferesFiltro";
-            this.tbxChoferesFiltro.Size = new System.Drawing.Size(273, 20);
+            this.tbxChoferesFiltro.Size = new System.Drawing.Size(292, 20);
             this.tbxChoferesFiltro.TabIndex = 2;
             this.tbxChoferesFiltro.TextChanged += new System.EventHandler(this.tbxChoferesFiltro_TextChanged);
             this.tbxChoferesFiltro.Enter += new System.EventHandler(this.tbxChoferesFiltro_Enter);
@@ -71,18 +71,18 @@
             // 
             this.dgvChoferes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvChoferes.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.dgvChoferes.Location = new System.Drawing.Point(37, 107);
+            this.dgvChoferes.Location = new System.Drawing.Point(12, 107);
             this.dgvChoferes.MultiSelect = false;
             this.dgvChoferes.Name = "dgvChoferes";
             this.dgvChoferes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvChoferes.Size = new System.Drawing.Size(453, 263);
+            this.dgvChoferes.Size = new System.Drawing.Size(620, 263);
             this.dgvChoferes.TabIndex = 3;
             this.dgvChoferes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvChoferes_CellContentClick);
             this.dgvChoferes.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvChoferes_CellDoubleClick);
             // 
             // btnChoferesNuevo
             // 
-            this.btnChoferesNuevo.Location = new System.Drawing.Point(385, 79);
+            this.btnChoferesNuevo.Location = new System.Drawing.Point(540, 78);
             this.btnChoferesNuevo.Name = "btnChoferesNuevo";
             this.btnChoferesNuevo.Size = new System.Drawing.Size(92, 23);
             this.btnChoferesNuevo.TabIndex = 4;
@@ -92,7 +92,7 @@
             // 
             // btnChoferesClose
             // 
-            this.btnChoferesClose.Location = new System.Drawing.Point(426, 376);
+            this.btnChoferesClose.Location = new System.Drawing.Point(581, 376);
             this.btnChoferesClose.Name = "btnChoferesClose";
             this.btnChoferesClose.Size = new System.Drawing.Size(51, 23);
             this.btnChoferesClose.TabIndex = 6;
@@ -104,7 +104,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(521, 422);
+            this.ClientSize = new System.Drawing.Size(644, 411);
             this.Controls.Add(this.btnChoferesClose);
             this.Controls.Add(this.btnChoferesNuevo);
             this.Controls.Add(this.dgvChoferes);

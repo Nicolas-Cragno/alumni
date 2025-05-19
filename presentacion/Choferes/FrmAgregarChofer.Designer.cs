@@ -136,10 +136,10 @@
             // lblAgregarChoferTitulo
             // 
             this.lblAgregarChoferTitulo.AutoSize = true;
-            this.lblAgregarChoferTitulo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAgregarChoferTitulo.Location = new System.Drawing.Point(85, 9);
+            this.lblAgregarChoferTitulo.Font = new System.Drawing.Font("Consolas", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAgregarChoferTitulo.Location = new System.Drawing.Point(87, 9);
             this.lblAgregarChoferTitulo.Name = "lblAgregarChoferTitulo";
-            this.lblAgregarChoferTitulo.Size = new System.Drawing.Size(210, 33);
+            this.lblAgregarChoferTitulo.Size = new System.Drawing.Size(207, 34);
             this.lblAgregarChoferTitulo.TabIndex = 42;
             this.lblAgregarChoferTitulo.Text = "Nuevo Chofer";
             // 

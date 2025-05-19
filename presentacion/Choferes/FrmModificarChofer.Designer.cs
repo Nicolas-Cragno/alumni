@@ -158,10 +158,10 @@
             // lblModificarChoferTitulo
             // 
             this.lblModificarChoferTitulo.AutoSize = true;
-            this.lblModificarChoferTitulo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblModificarChoferTitulo.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblModificarChoferTitulo.Location = new System.Drawing.Point(26, 9);
             this.lblModificarChoferTitulo.Name = "lblModificarChoferTitulo";
-            this.lblModificarChoferTitulo.Size = new System.Drawing.Size(194, 18);
+            this.lblModificarChoferTitulo.Size = new System.Drawing.Size(171, 19);
             this.lblModificarChoferTitulo.TabIndex = 20;
             this.lblModificarChoferTitulo.Text = "APELLIDO Y NOMBRES";
             this.lblModificarChoferTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -179,10 +179,10 @@
             // lblModificarChoferSubtitulo
             // 
             this.lblModificarChoferSubtitulo.AutoSize = true;
-            this.lblModificarChoferSubtitulo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblModificarChoferSubtitulo.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblModificarChoferSubtitulo.Location = new System.Drawing.Point(28, 27);
             this.lblModificarChoferSubtitulo.Name = "lblModificarChoferSubtitulo";
-            this.lblModificarChoferSubtitulo.Size = new System.Drawing.Size(37, 18);
+            this.lblModificarChoferSubtitulo.Size = new System.Drawing.Size(36, 19);
             this.lblModificarChoferSubtitulo.TabIndex = 43;
             this.lblModificarChoferSubtitulo.Text = "DNI";
             this.lblModificarChoferSubtitulo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;

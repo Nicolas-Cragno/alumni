@@ -21,29 +21,15 @@ namespace presentacion
             InitializeComponent();
         }
 
-        private void btnChoferes_Click(object sender, EventArgs e)
+        private void cerrarVentantas()
         {
-            FrmChoferes ventana = new FrmChoferes();
-            ventana.ShowDialog();
+            foreach (Form v in this.MdiChildren)
+            {
+                v.Close();
+            }
         }
 
-        private void btnVehiculos_Click(object sender, EventArgs e)
-        {
-            FrmVehiculos ventana = new FrmVehiculos();
-            ventana.ShowDialog();
-        }
-
-        private void btnMovimientos_Click(object sender, EventArgs e)
-        {
-            frmMovimientos ventana = new frmMovimientos();    
-            ventana.ShowDialog();
-        }
-
-        private void btnEventos_Click(object sender, EventArgs e)
-        {
-            FrmEventos ventana = new FrmEventos();
-            ventana.ShowDialog();
-        }
+       
 
         private void FrmPrincipal_Load(object sender, EventArgs e)
         {
@@ -53,6 +39,138 @@ namespace presentacion
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void movimientosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            cerrarVentantas();
+            frmMovimientos ventana = new frmMovimientos();
+            ventana.MdiParent = this;
+            ventana.WindowState = FormWindowState.Maximized;
+            ventana.Show();
+        }
+
+        private void tsmEventos_Click(object sender, EventArgs e)
+        {
+            cerrarVentantas();
+            FrmEventos ventana = new FrmEventos();
+            ventana.MdiParent = this;
+            ventana.WindowState = FormWindowState.Maximized;
+            ventana.Show();
+        }
+
+        private void tsmViajes_Click(object sender, EventArgs e)
+        {
+            cerrarVentantas();
+            /*
+            FrmViajes ventana = new FrmViajes();
+            ventana.MdiParent = this;
+            ventana.WindowState = FormWindowState.Maximized;
+            ventana.Show();
+             */
+        }
+
+        private void tsmChoferes_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void tsmTractoresFurgones_Click(object sender, EventArgs e)
+        {
+            cerrarVentantas();
+            FrmVehiculos ventana = new FrmVehiculos();
+            ventana.MdiParent = this;
+            ventana.WindowState = FormWindowState.Maximized;
+            ventana.Show();
+        }
+
+        private void tsmOtrosVehiculos_Click(object sender, EventArgs e)
+        {
+            cerrarVentantas();
+            /*
+            FrmOtros ventana = new FrmOtros();
+            ventana.MdiParent = this;
+            ventana.WindowState = FormWindowState.Maximized;
+            ventana.Show();
+             */
+        }
+
+        private void tsmClientes_Click(object sender, EventArgs e)
+        {
+            cerrarVentantas();
+            /*
+            FrmClientes ventana = new FrmClientes();
+            ventana.MdiParent = this;
+            ventana.WindowState = FormWindowState.Maximized;
+            ventana.Show();
+             */
+        }
+
+        private void gestionarRecursosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void choferesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            cerrarVentantas();
+            FrmChoferes ventana = new FrmChoferes();
+            ventana.MdiParent = this;
+            ventana.WindowState = FormWindowState.Maximized;
+            ventana.Show();
+        }
+
+        private void tractoresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            cerrarVentantas();
+            FrmVehiculos ventana = new FrmVehiculos();
+            ventana.MdiParent = this;
+            ventana.WindowState = FormWindowState.Maximized;
+            ventana.Show();
+        }
+
+        private void furgonesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            cerrarVentantas();
+            /*
+            FrmFurgones ventana = new FrmFurgones();
+            ventana.MdiParent = this;
+            ventana.WindowState = FormWindowState.Maximized;
+            ventana.Show();
+             */
+        }
+
+        private void otrosVehiculosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            cerrarVentantas();
+            /*
+            FrmOtros ventana = new FrmOtros();
+            ventana.MdiParent = this;
+            ventana.WindowState = FormWindowState.Maximized;
+            ventana.Show();
+             */
+        }
+
+        private void empresasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            cerrarVentantas();
+            /*
+            FrmEmpresas ventana = new FrmEmpresas();
+            ventana.MdiParent = this;
+            ventana.WindowState = FormWindowState.Maximized;
+            ventana.Show();
+             */
+        }
+
+        private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            cerrarVentantas();
+            /*
+            FrmEmpresas ventana = new FrmEmpresas();
+            ventana.MdiParent = this;
+            ventana.WindowState = FormWindowState.Maximized;
+            ventana.Show();
+             */
         }
     }
 }

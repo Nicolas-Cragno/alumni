@@ -122,10 +122,10 @@
             // lblAgregarTractorTitulo
             // 
             this.lblAgregarTractorTitulo.AutoSize = true;
-            this.lblAgregarTractorTitulo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAgregarTractorTitulo.Location = new System.Drawing.Point(68, 10);
+            this.lblAgregarTractorTitulo.Font = new System.Drawing.Font("Consolas", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAgregarTractorTitulo.Location = new System.Drawing.Point(74, 10);
             this.lblAgregarTractorTitulo.Name = "lblAgregarTractorTitulo";
-            this.lblAgregarTractorTitulo.Size = new System.Drawing.Size(216, 33);
+            this.lblAgregarTractorTitulo.Size = new System.Drawing.Size(207, 34);
             this.lblAgregarTractorTitulo.TabIndex = 86;
             this.lblAgregarTractorTitulo.Text = "Nuevo Furgón";
             // 

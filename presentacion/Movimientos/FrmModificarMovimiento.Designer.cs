@@ -125,10 +125,10 @@
             // lblModificarMovimientoTitulo
             // 
             this.lblModificarMovimientoTitulo.AutoSize = true;
-            this.lblModificarMovimientoTitulo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblModificarMovimientoTitulo.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblModificarMovimientoTitulo.Location = new System.Drawing.Point(12, 9);
             this.lblModificarMovimientoTitulo.Name = "lblModificarMovimientoTitulo";
-            this.lblModificarMovimientoTitulo.Size = new System.Drawing.Size(273, 28);
+            this.lblModificarMovimientoTitulo.Size = new System.Drawing.Size(285, 28);
             this.lblModificarMovimientoTitulo.TabIndex = 96;
             this.lblModificarMovimientoTitulo.Text = "Edición de movimiento";
             // 
@@ -153,10 +153,10 @@
             // lblModificarMovimientoFecha
             // 
             this.lblModificarMovimientoFecha.AutoSize = true;
-            this.lblModificarMovimientoFecha.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblModificarMovimientoFecha.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblModificarMovimientoFecha.Location = new System.Drawing.Point(14, 37);
             this.lblModificarMovimientoFecha.Name = "lblModificarMovimientoFecha";
-            this.lblModificarMovimientoFecha.Size = new System.Drawing.Size(186, 18);
+            this.lblModificarMovimientoFecha.Size = new System.Drawing.Size(198, 19);
             this.lblModificarMovimientoFecha.TabIndex = 109;
             this.lblModificarMovimientoFecha.Text = "Edición de movimiento";
             // 

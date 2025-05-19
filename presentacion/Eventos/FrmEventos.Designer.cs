@@ -39,7 +39,7 @@
             // 
             // btnEventosClose
             // 
-            this.btnEventosClose.Location = new System.Drawing.Point(423, 376);
+            this.btnEventosClose.Location = new System.Drawing.Point(581, 376);
             this.btnEventosClose.Name = "btnEventosClose";
             this.btnEventosClose.Size = new System.Drawing.Size(51, 23);
             this.btnEventosClose.TabIndex = 12;
@@ -49,7 +49,7 @@
             // 
             // btnEventosNuevo
             // 
-            this.btnEventosNuevo.Location = new System.Drawing.Point(382, 79);
+            this.btnEventosNuevo.Location = new System.Drawing.Point(540, 79);
             this.btnEventosNuevo.Name = "btnEventosNuevo";
             this.btnEventosNuevo.Size = new System.Drawing.Size(92, 23);
             this.btnEventosNuevo.TabIndex = 11;
@@ -61,11 +61,11 @@
             // 
             this.dgvEventos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvEventos.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.dgvEventos.Location = new System.Drawing.Point(34, 107);
+            this.dgvEventos.Location = new System.Drawing.Point(12, 107);
             this.dgvEventos.MultiSelect = false;
             this.dgvEventos.Name = "dgvEventos";
             this.dgvEventos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvEventos.Size = new System.Drawing.Size(453, 263);
+            this.dgvEventos.Size = new System.Drawing.Size(620, 263);
             this.dgvEventos.TabIndex = 10;
             this.dgvEventos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEventos_CellContentClick);
             this.dgvEventos.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEventos_CellContentDoubleClick);
@@ -73,9 +73,9 @@
             // 
             // tbxEventosFiltro
             // 
-            this.tbxEventosFiltro.Location = new System.Drawing.Point(81, 81);
+            this.tbxEventosFiltro.Location = new System.Drawing.Point(54, 82);
             this.tbxEventosFiltro.Name = "tbxEventosFiltro";
-            this.tbxEventosFiltro.Size = new System.Drawing.Size(273, 20);
+            this.tbxEventosFiltro.Size = new System.Drawing.Size(292, 20);
             this.tbxEventosFiltro.TabIndex = 9;
             this.tbxEventosFiltro.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbxEventosFiltro_KeyPress);
             // 
@@ -83,7 +83,7 @@
             // 
             this.lblEventosFiltro.AutoSize = true;
             this.lblEventosFiltro.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEventosFiltro.Location = new System.Drawing.Point(41, 85);
+            this.lblEventosFiltro.Location = new System.Drawing.Point(14, 86);
             this.lblEventosFiltro.Name = "lblEventosFiltro";
             this.lblEventosFiltro.Size = new System.Drawing.Size(34, 12);
             this.lblEventosFiltro.TabIndex = 8;
@@ -92,10 +92,10 @@
             // lblEventosTitulo
             // 
             this.lblEventosTitulo.AutoSize = true;
-            this.lblEventosTitulo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEventosTitulo.Location = new System.Drawing.Point(169, 24);
+            this.lblEventosTitulo.Font = new System.Drawing.Font("Consolas", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEventosTitulo.Location = new System.Drawing.Point(259, 24);
             this.lblEventosTitulo.Name = "lblEventosTitulo";
-            this.lblEventosTitulo.Size = new System.Drawing.Size(155, 33);
+            this.lblEventosTitulo.Size = new System.Drawing.Size(127, 34);
             this.lblEventosTitulo.TabIndex = 7;
             this.lblEventosTitulo.Text = "EVENTOS";
             // 
@@ -103,7 +103,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(521, 422);
+            this.ClientSize = new System.Drawing.Size(644, 411);
             this.Controls.Add(this.btnEventosClose);
             this.Controls.Add(this.btnEventosNuevo);
             this.Controls.Add(this.dgvEventos);
