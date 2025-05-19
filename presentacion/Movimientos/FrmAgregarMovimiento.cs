@@ -24,6 +24,7 @@ namespace presentacion.Eventos
         {
             PersonaNegocio personaNegocio = new PersonaNegocio();
             TractorNegocio tractorNegocio = new TractorNegocio();
+            FurgonNegocio furgonNegocio = new FurgonNegocio();
             MovimientoNegocio movimientoNegocio = new MovimientoNegocio();
 
             try
@@ -31,6 +32,7 @@ namespace presentacion.Eventos
                 cbxAgregarMovimientoInterno.DataSource = tractorNegocio.listarInternos();
                 cbxAgregarMovimientoChofer.DataSource = personaNegocio.nombreChoferes();
                 cbxAgregarMovimientoTipo.DataSource = movimientoNegocio.tiposMovimientos();
+                cbxAgregarMovimientoFurgon.DataSource = furgonNegocio.listarInternos();
             }
             catch (Exception ex)
             {
@@ -44,6 +46,7 @@ namespace presentacion.Eventos
             MovimientoNegocio negocio = new MovimientoNegocio();
             Evento nuevoEvento = new Evento();
             EventoNegocio eventoNegocio = new EventoNegocio();
+            AccesoDatos datos = new AccesoDatos();
 
             try
             {
@@ -77,14 +80,15 @@ namespace presentacion.Eventos
             }
             catch(Exception ex)
             {
-                MessageBox.Show("Error al cargar el movimiento. Contacte al técnico.");
+                //MessageBox.Show("Error al cargar el movimiento. Contacte al técnico.");
+                //MessageBox.Show(ex.ToString());
+                throw ex;
             }
         }
 
         private void cbxAgregarMovimientoTipo_SelectedIndexChanged(object sender, EventArgs e)
         {
             cbxAgregarMovimientoTipo.DropDownStyle = ComboBoxStyle.DropDownList;
-            cbxAgregarMovimientoTipo.SelectedIndex = -1;
         }
 
         private void btnAgregarMovimientoCerrar_Click(object sender, EventArgs e)
@@ -95,19 +99,16 @@ namespace presentacion.Eventos
         private void cbxAgregarMovimientoChofer_SelectedIndexChanged(object sender, EventArgs e)
         {
             cbxAgregarMovimientoChofer.DropDownStyle = ComboBoxStyle.DropDownList;
-            cbxAgregarMovimientoChofer.SelectedIndex = -1;
         }
 
         private void cbxAgregarMovimientoInterno_SelectedIndexChanged(object sender, EventArgs e)
         {
             cbxAgregarMovimientoInterno.DropDownStyle = ComboBoxStyle.DropDownList;
-            cbxAgregarMovimientoInterno.SelectedIndex = -1;
         }
 
         private void cbxAgregarMovimientoFurgon_SelectedIndexChanged(object sender, EventArgs e)
         {
             cbxAgregarMovimientoFurgon.DropDownStyle = ComboBoxStyle.DropDownList;
-            cbxAgregarMovimientoFurgon.SelectedIndex = -1;
         }
     }
 }

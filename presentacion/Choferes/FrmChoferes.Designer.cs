@@ -34,6 +34,7 @@
             this.dgvChoferes = new System.Windows.Forms.DataGridView();
             this.btnChoferesNuevo = new System.Windows.Forms.Button();
             this.btnChoferesClose = new System.Windows.Forms.Button();
+            this.btnInactivos = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvChoferes)).BeginInit();
             this.SuspendLayout();
             // 
@@ -41,11 +42,11 @@
             // 
             this.lblChoferesTitulo.AutoSize = true;
             this.lblChoferesTitulo.Font = new System.Drawing.Font("Consolas", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblChoferesTitulo.Location = new System.Drawing.Point(251, 24);
+            this.lblChoferesTitulo.Location = new System.Drawing.Point(187, 24);
             this.lblChoferesTitulo.Name = "lblChoferesTitulo";
-            this.lblChoferesTitulo.Size = new System.Drawing.Size(143, 34);
+            this.lblChoferesTitulo.Size = new System.Drawing.Size(271, 34);
             this.lblChoferesTitulo.TabIndex = 0;
-            this.lblChoferesTitulo.Text = "CHOFERES";
+            this.lblChoferesTitulo.Text = "CHOFERES ACTIVOS";
             // 
             // lblChoferesFiltro
             // 
@@ -100,11 +101,22 @@
             this.btnChoferesClose.UseVisualStyleBackColor = true;
             this.btnChoferesClose.Click += new System.EventHandler(this.btnChoferesClose_Click);
             // 
+            // btnInactivos
+            // 
+            this.btnInactivos.Location = new System.Drawing.Point(442, 78);
+            this.btnInactivos.Name = "btnInactivos";
+            this.btnInactivos.Size = new System.Drawing.Size(92, 23);
+            this.btnInactivos.TabIndex = 7;
+            this.btnInactivos.Text = "Ver inactivos";
+            this.btnInactivos.UseVisualStyleBackColor = true;
+            this.btnInactivos.Click += new System.EventHandler(this.btnInactivos_Click);
+            // 
             // FrmChoferes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(644, 411);
+            this.Controls.Add(this.btnInactivos);
             this.Controls.Add(this.btnChoferesClose);
             this.Controls.Add(this.btnChoferesNuevo);
             this.Controls.Add(this.dgvChoferes);
@@ -128,5 +140,6 @@
         private System.Windows.Forms.DataGridView dgvChoferes;
         private System.Windows.Forms.Button btnChoferesNuevo;
         private System.Windows.Forms.Button btnChoferesClose;
+        private System.Windows.Forms.Button btnInactivos;
     }
 }

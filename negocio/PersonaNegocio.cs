@@ -64,6 +64,16 @@ namespace negocio
             }
         }
 
+        public List<Persona> listarChoferesActivos()
+        {
+            return listarChoferes().Where(chofer => chofer.Activo == true).ToList();
+        } 
+
+        public List<Persona> listarChoferesInactivos()
+        {
+            return listarChoferes().Where(chofer => chofer.Activo != true).ToList();
+        }
+
         public List<string> nombreChoferes()
         {
             List<string> listaChoferes = new List<string>();

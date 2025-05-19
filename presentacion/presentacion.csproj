@@ -63,6 +63,12 @@
     <Compile Include="Choferes\FrmChoferes.Designer.cs">
       <DependentUpon>FrmChoferes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Choferes\FrmChoferesInactivos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Choferes\FrmChoferesInactivos.Designer.cs">
+      <DependentUpon>FrmChoferesInactivos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Choferes\FrmEventoChofer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -190,6 +196,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Choferes\FrmChoferes.resx">
       <DependentUpon>FrmChoferes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Choferes\FrmChoferesInactivos.resx">
+      <DependentUpon>FrmChoferesInactivos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Choferes\FrmEventoChofer.resx">
       <DependentUpon>FrmEventoChofer.cs</DependentUpon>

@@ -34,3 +34,4 @@ C:\Users\NIcolas Cragno\Desktop\aplicaciones\Alumni\presentacion\dominio.dll
 C:\Users\NIcolas Cragno\Desktop\aplicaciones\Alumni\presentacion\negocio.dll
 C:\Users\NIcolas Cragno\Desktop\aplicaciones\Alumni\presentacion\dominio.pdb
 C:\Users\NIcolas Cragno\Desktop\aplicaciones\Alumni\presentacion\negocio.pdb
+C:\Users\NIcolas Cragno\Desktop\aplicaciones\Alumni\presentacion\obj\Debug\presentacion.Choferes.FrmChoferesInactivos.resources

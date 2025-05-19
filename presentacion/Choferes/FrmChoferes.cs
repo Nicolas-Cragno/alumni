@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using negocio;
 using dominio;
+using presentacion.Choferes;
 
 namespace presentacion
 {
@@ -87,7 +88,7 @@ namespace presentacion
         private void cargar()
         {
             PersonaNegocio negocio = new PersonaNegocio();
-            listadoChoferes = negocio.listarChoferes();
+            listadoChoferes = negocio.listarChoferesActivos();
             dgvChoferes.DataSource = listadoChoferes;
             ocultarColumnas();
         }
@@ -112,6 +113,13 @@ namespace presentacion
         private void tbxChoferesFiltro_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnInactivos_Click(object sender, EventArgs e)
+        {
+            FrmChoferesInactivos ventana = new FrmChoferesInactivos();
+            ventana.ShowDialog();
+            cargar();
         }
     }
 }

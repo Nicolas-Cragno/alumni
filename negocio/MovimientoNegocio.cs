@@ -101,19 +101,22 @@ namespace negocio
         public void agregarMovimiento(Movimiento nvMv) 
         {
             AccesoDatos datos = new AccesoDatos();
-            int dni, idCliente;
+            int dni, idCliente, idMovimiento;
 
+            if(nvMv.Id_Tipo != "SIN ASIGNAR")
+                idMovimiento = datos.buscarIdTipoMovimiento(nvMv.Id_Tipo);
+            else { idMovimiento = 0 ; }
             if (nvMv.Persona != "SIN CHOFER ASIGNADO")
                 dni = datos.buscarDniFull(nvMv.Persona);
-            else {dni = 0;}
+            else { dni = 0; }
 
-            if (nvMv.Cliente != "")
+            if (nvMv.Cliente != "" || nvMv.Cliente != null)
                 idCliente = datos.buscarIdCliente(nvMv.Cliente);
             else { idCliente = 0; }
 
             try
             {
-                datos.setearConsulta("INSERT INTO cantarini_control.dbo.movimientos(idTipo, dni, interno, idFurgon, idCliente, fecha, destino, observaciones) VALUES (" + nvMv.Id_Tipo + ", " + dni + ", " + nvMv.Interno + ", " + nvMv.Furgon + ", '" + idCliente + "', convert(datetime, getdate()), '" + nvMv.Destino + "', '" + nvMv.Observaciones + "');");
+                datos.setearConsulta("INSERT INTO cantarini_control.dbo.movimientos(idTipo, dni, interno, idFurgon, idCliente, fecha, destino, observaciones) VALUES (" + idMovimiento + ", " + dni + ", " + nvMv.Interno + ", " + nvMv.Furgon + ", '" + idCliente + "', convert(datetime, getdate()), '" + nvMv.Destino + "', '" + nvMv.Observaciones + "');");
                 datos.ejecutarAccion();
             }
             catch(Exception ex)

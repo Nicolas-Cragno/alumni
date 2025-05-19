@@ -248,6 +248,31 @@ namespace negocio
             finally{ datos.cerrarConexion();}
         }
 
+        public int buscarIdTipoMovimiento(string movimiento)
+        {
+            AccesoDatos datos =new AccesoDatos();
+            string queryMovimiento = "SELECT idTipoMovimiento FROM cantarini_control.dbo.tipos_movimientos WHERE nombre=" + movimiento;
+            int idMovimiento;
+
+            try
+            {
+                datos.setearConsulta(queryMovimiento);
+                datos.ejecutarLectura();
+
+                if (datos.Lector.Read())
+                {
+                    idMovimiento = (int)datos.Lector["idTipoMovimiento"];
+                } else 
+                {
+                    idMovimiento = 0;
+                }
+
+                return idMovimiento;
+            }
+            catch(Exception ex) { throw ex; }
+            finally { datos.cerrarConexion();}
+        }
+
         public string buscarEmpresa(int idEmpresa) // sin acceso a DB
         {
             string nombreEmpresa;
