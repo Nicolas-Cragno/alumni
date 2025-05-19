@@ -251,7 +251,7 @@ namespace negocio
         public int buscarIdTipoMovimiento(string movimiento)
         {
             AccesoDatos datos =new AccesoDatos();
-            string queryMovimiento = "SELECT idTipoMovimiento FROM cantarini_control.dbo.tipos_movimientos WHERE nombre=" + movimiento;
+            string queryMovimiento = "SELECT idTipoMovimiento FROM cantarini_control.dbo.tipos_movimientos WHERE nombre='" + movimiento + "';" ;
             int idMovimiento;
 
             try
