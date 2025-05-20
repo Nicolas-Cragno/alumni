@@ -40,6 +40,27 @@ namespace presentacion.Choferes
             cargar();
         }
 
+        private void filtrarChoferes()
+        {
+            List<Persona> listaFiltrada;
+            string filtro = tbxChoferesInactivosFiltro.Text;
+
+            if (filtro != "")
+            {
+                // filtra por dni, apellido y/o nombres.
+                listaFiltrada = listadoChoferes.FindAll(ev => ev.Dni.ToString().Contains(filtro.ToUpper()) || ev.Apellido.ToString().Contains(filtro.ToUpper()) || ev.Nombres.ToString().Contains(filtro.ToUpper()));
+            }
+            else
+            {
+                // si el filtro esta en blanco, devuelve la lista total
+                listaFiltrada = listadoChoferes;
+            }
+
+            dgvChoferesInactivos.DataSource = null; // vaciarla primero para pisarla desp
+            dgvChoferesInactivos.DataSource = listaFiltrada;
+            ocultarColumnas();
+        }
+
         private void btnChoferesClose_Click(object sender, EventArgs e)
         {
             Close();
@@ -51,6 +72,23 @@ namespace presentacion.Choferes
             listadoChoferes = negocio.listarChoferesInactivos();
             dgvChoferesInactivos.DataSource = listadoChoferes;
             ocultarColumnas();
+        }
+
+        private void tbxChoferesInactivosFiltro_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            filtrarChoferes();
+        }
+
+        private void dgvChoferesInactivos_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            Persona seleccion = (Persona)dgvChoferesInactivos.CurrentRow.DataBoundItem;
+
+
+            FrmFichaChofer ficha = new FrmFichaChofer(seleccion);
+            ficha.ShowDialog();
+            //FrmModificarChofer modificar = new FrmModificarChofer(seleccion);
+            //modificar.ShowDialog();
+            cargar();
         }
     }
 }

@@ -84,6 +84,7 @@
             this.btnAgregarFichaFurgonEventos.TabIndex = 105;
             this.btnAgregarFichaFurgonEventos.Text = "Agregar";
             this.btnAgregarFichaFurgonEventos.UseVisualStyleBackColor = true;
+            this.btnAgregarFichaFurgonEventos.Click += new System.EventHandler(this.btnAgregarFichaFurgonEventos_Click);
             // 
             // tbxFichaFurgonEventosFiltro
             // 
@@ -91,6 +92,7 @@
             this.tbxFichaFurgonEventosFiltro.Name = "tbxFichaFurgonEventosFiltro";
             this.tbxFichaFurgonEventosFiltro.Size = new System.Drawing.Size(147, 20);
             this.tbxFichaFurgonEventosFiltro.TabIndex = 104;
+            this.tbxFichaFurgonEventosFiltro.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbxFichaFurgonEventosFiltro_KeyPress);
             // 
             // lblFichaFurgonEventosFiltro
             // 
@@ -112,6 +114,7 @@
             this.dgvFichaFurgonEventos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvFichaFurgonEventos.Size = new System.Drawing.Size(265, 160);
             this.dgvFichaFurgonEventos.TabIndex = 102;
+            this.dgvFichaFurgonEventos.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvFichaFurgonEventos_CellDoubleClick);
             // 
             // lblFichaFurgonEventosTitulo
             // 

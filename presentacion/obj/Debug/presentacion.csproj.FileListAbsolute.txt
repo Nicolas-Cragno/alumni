@@ -1,7 +1,6 @@
 C:\Users\NIcolas Cragno\Desktop\aplicaciones\Alumni\presentacion\obj\Debug\presentacion.csproj.AssemblyReference.cache
 C:\Users\NIcolas Cragno\Desktop\aplicaciones\Alumni\presentacion\obj\Debug\presentacion.FrmAgregarChofer.resources
 C:\Users\NIcolas Cragno\Desktop\aplicaciones\Alumni\presentacion\obj\Debug\presentacion.FrmChoferes.resources
-C:\Users\NIcolas Cragno\Desktop\aplicaciones\Alumni\presentacion\obj\Debug\presentacion.Choferes.FrmEventoChofer.resources
 C:\Users\NIcolas Cragno\Desktop\aplicaciones\Alumni\presentacion\obj\Debug\presentacion.FrmFichaChofer.resources
 C:\Users\NIcolas Cragno\Desktop\aplicaciones\Alumni\presentacion\obj\Debug\presentacion.FrmModificarChofer.resources
 C:\Users\NIcolas Cragno\Desktop\aplicaciones\Alumni\presentacion\obj\Debug\presentacion.Eventos.FrmAgregarEvento.resources

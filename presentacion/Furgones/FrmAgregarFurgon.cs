@@ -69,6 +69,8 @@ namespace presentacion.Furgones
                 evento.Tipo = "ALTA FURGON " + empresa;
                 evento.Detalle = "FURGÓN DADO DE ALTA POR SISTEMA.";
                 eventoNegocio.registrarEvento(evento);
+                
+                Close();
             }
             catch(SqlException ex)
             {
@@ -77,6 +79,7 @@ namespace presentacion.Furgones
                     MessageBox.Show("El número de interno ya está registrado.");
                 }
             }
+
         }
     }
 }

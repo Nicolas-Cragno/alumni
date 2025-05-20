@@ -15,6 +15,8 @@ namespace presentacion.Eventos
 {
     public partial class FrmAgregarEvento : Form
     {
+        char tipoEspecifico;
+        int idEspecifico;
         public FrmAgregarEvento()
         {
             InitializeComponent();
@@ -26,22 +28,61 @@ namespace presentacion.Eventos
             btnAgregarEvento.TabIndex = 5;
             btnAgregarEventoCerrar.TabIndex = 6;
         }
+        public FrmAgregarEvento(char tipo, int id)
+        {
+            tipoEspecifico = tipo;
+            idEspecifico = id;
+            InitializeComponent();
+            cbxAgregarEventoChofer.TabIndex = 0;
+            tbxAgregarEventoTipo.TabIndex = 2;
+            cbxAgregarEventoInterno.TabIndex = 2;
+            cbxAgregarEventoFurgon.TabIndex = 3;
+            tbxAgregarEventoDetalle.TabIndex = 4;
+            btnAgregarEvento.TabIndex = 5;
+            btnAgregarEventoCerrar.TabIndex = 6;
+        }
+
+
         private void FrmAgregarEvento_Load(object sender, EventArgs e)
         {
             PersonaNegocio personaNegocio = new PersonaNegocio();
             TractorNegocio tractorNegocio = new TractorNegocio();
             FurgonNegocio furgonNegocio = new FurgonNegocio();
+            AccesoDatos datos = new AccesoDatos();
 
-            try
-            {
-                cbxAgregarEventoInterno.DataSource = tractorNegocio.listarInternos();
-                cbxAgregarEventoChofer.DataSource = personaNegocio.nombreChoferes();
-                cbxAgregarEventoFurgon.DataSource = furgonNegocio.listarInternos();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString());
-            }
+                try
+                {
+                    switch (tipoEspecifico)
+                    {
+                        case 'C':
+                            cbxAgregarEventoChofer.Text = datos.buscarChofer(idEspecifico);
+                            cbxAgregarEventoChofer.Enabled = false;
+                            cbxAgregarEventoInterno.DataSource = tractorNegocio.listarInternos();
+                            cbxAgregarEventoFurgon.DataSource = furgonNegocio.listarInternos();
+                            break;
+                        case 'T':
+                            cbxAgregarEventoInterno.Text = idEspecifico.ToString();
+                            cbxAgregarEventoChofer.DataSource = personaNegocio.nombreChoferes();
+                            cbxAgregarEventoFurgon.DataSource = furgonNegocio.listarInternos();
+                            cbxAgregarEventoInterno.Enabled = false;
+                            break;
+                        case 'F':
+                            cbxAgregarEventoFurgon.Text = idEspecifico.ToString();
+                            cbxAgregarEventoChofer.DataSource = personaNegocio.nombreChoferes();
+                            cbxAgregarEventoInterno.DataSource = tractorNegocio.listarInternos();
+                            cbxAgregarEventoFurgon.Enabled = false;
+                            break;
+                        default:
+                            cbxAgregarEventoChofer.DataSource = personaNegocio.nombreChoferes();
+                            cbxAgregarEventoInterno.DataSource = tractorNegocio.listarInternos();
+                            cbxAgregarEventoFurgon.DataSource = furgonNegocio.listarInternos();
+                            break;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.ToString());
+                }
         }
 
         private void btnAgregarEvento_Click_1(object sender, EventArgs e)

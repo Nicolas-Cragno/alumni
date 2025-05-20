@@ -156,6 +156,7 @@ namespace presentacion.Vehiculos
 
             FrmFichaTractor ficha = new FrmFichaTractor(seleccion);
             ficha.ShowDialog();
+            cargarTractores();
         }
 
         private void dgvVehiculosT_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
@@ -178,6 +179,7 @@ namespace presentacion.Vehiculos
             Furgon seleccion = (Furgon)dgvVehiculosF.CurrentRow.DataBoundItem;
             FrmFichaFurgon ficha = new FrmFichaFurgon(seleccion);
             ficha.ShowDialog();
+            cargarFurgones();
         }
     }
 }

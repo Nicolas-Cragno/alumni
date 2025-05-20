@@ -52,6 +52,7 @@
             this.tbxChoferesInactivosFiltro.Name = "tbxChoferesInactivosFiltro";
             this.tbxChoferesInactivosFiltro.Size = new System.Drawing.Size(292, 20);
             this.tbxChoferesInactivosFiltro.TabIndex = 4;
+            this.tbxChoferesInactivosFiltro.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbxChoferesInactivosFiltro_KeyPress);
             // 
             // lblChoferesInactivosFiltro
             // 
@@ -73,6 +74,7 @@
             this.dgvChoferesInactivos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvChoferesInactivos.Size = new System.Drawing.Size(356, 245);
             this.dgvChoferesInactivos.TabIndex = 5;
+            this.dgvChoferesInactivos.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvChoferesInactivos_CellDoubleClick);
             // 
             // btnChoferesInactivosClose
             // 

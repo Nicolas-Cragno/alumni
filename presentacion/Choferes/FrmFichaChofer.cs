@@ -79,6 +79,8 @@ namespace presentacion
             dgvFichaChoferEvento.Columns["Id_Evento"].Visible = false;
             dgvFichaChoferEvento.Columns["Persona"].Visible = false;
             dgvFichaChoferEvento.Columns["Interno"].Visible = false;
+            dgvFichaChoferEvento.Columns["Furgon"].Visible = false;
+            dgvFichaChoferEvento.Columns["dni"].Visible = false ;
         }
 
         private void filtrarEventos()
@@ -133,9 +135,11 @@ namespace presentacion
 
         private void btnAgregarFichaChoferEvento_Click(object sender, EventArgs e)
         {
-            FrmEventoChofer ventana = new FrmEventoChofer(chofer);
+            char tipo = 'C';
+            //FrmEventoChofer ventana = new FrmEventoChofer(chofer);
+            FrmAgregarEvento ventana = new FrmAgregarEvento(tipo, chofer.Dni);
             ventana.ShowDialog();
-            cargar();
+            cargarEventos();
         }
 
         private void dgvFichaChoferEvento_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
@@ -144,7 +148,7 @@ namespace presentacion
 
             FrmFichaEvento evento = new FrmFichaEvento(seleccion);
             evento.ShowDialog();
-            cargar();
+            cargarEventos();
         }
 
         private void btbFichaChoferCerrar_Click(object sender, EventArgs e)
