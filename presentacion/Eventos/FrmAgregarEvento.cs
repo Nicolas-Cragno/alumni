@@ -18,16 +18,25 @@ namespace presentacion.Eventos
         public FrmAgregarEvento()
         {
             InitializeComponent();
+            cbxAgregarEventoChofer.TabIndex = 0;
+            tbxAgregarEventoTipo.TabIndex = 2;
+            cbxAgregarEventoInterno.TabIndex = 2;
+            cbxAgregarEventoFurgon.TabIndex = 3;
+            tbxAgregarEventoDetalle.TabIndex = 4;
+            btnAgregarEvento.TabIndex = 5;
+            btnAgregarEventoCerrar.TabIndex = 6;
         }
         private void FrmAgregarEvento_Load(object sender, EventArgs e)
         {
             PersonaNegocio personaNegocio = new PersonaNegocio();
             TractorNegocio tractorNegocio = new TractorNegocio();
+            FurgonNegocio furgonNegocio = new FurgonNegocio();
 
             try
             {
                 cbxAgregarEventoInterno.DataSource = tractorNegocio.listarInternos();
                 cbxAgregarEventoChofer.DataSource = personaNegocio.nombreChoferes();
+                cbxAgregarEventoFurgon.DataSource = furgonNegocio.listarInternos();
             }
             catch (Exception ex)
             {
@@ -44,6 +53,7 @@ namespace presentacion.Eventos
             {
                 nuevoEvento.Persona = (string)cbxAgregarEventoChofer.Text.ToUpper();
                 nuevoEvento.Interno = int.Parse(cbxAgregarEventoInterno.Text);
+                nuevoEvento.Furgon = int.Parse(cbxAgregarEventoFurgon.Text);
                 nuevoEvento.Tipo = (string)tbxAgregarEventoTipo.Text.ToUpper();
                 nuevoEvento.Detalle = (string)tbxAgregarEventoDetalle.Text.ToUpper();
                 nuevoEvento.Fecha = DateTime.Now;

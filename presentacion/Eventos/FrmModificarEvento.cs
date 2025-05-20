@@ -19,6 +19,13 @@ namespace presentacion.Eventos
         {
             InitializeComponent();
             evento = eventoSeleccionado;
+            cbxModificarEventoChofer.TabIndex = 0;
+            cbxModificarEventoInterno.TabIndex = 1;
+            tbxModificarEventoTipo.TabIndex = 2;
+            cbxModificarEventoFurgon.TabIndex = 3;
+            tbxModificarEventoDetalle.TabIndex = 4;
+            btnModificarEvento.TabIndex = 5;
+            btnModificarEventoCerrar.TabIndex = 6;
         }
 
         private void lblModificarEventoTitulo_Click(object sender, EventArgs e)

@@ -18,6 +18,10 @@ namespace presentacion.Eventos
         public FrmEventos()
         {
             InitializeComponent();
+            tbxEventosFiltro.TabIndex = 0;
+            btnEventosNuevo.TabIndex = 1;
+            dgvEventos.TabIndex = 2;
+            btnEventosClose.TabIndex = 3;
         }
 
         private void ocultarColumnas()

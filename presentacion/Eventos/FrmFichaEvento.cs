@@ -19,6 +19,14 @@ namespace presentacion.Eventos
         {
             InitializeComponent();
             evento = eventoSeleccionado;
+            tbxFichaEventoFecha.TabIndex = 0;
+            tbxFichaEventoChofer.TabIndex = 1;
+            tbxFichaEventoTipo.TabIndex = 2;
+            tbxFichaEventoInterno.TabIndex = 3;
+            tbxFichaEventoFurgon.TabIndex = 4;
+            tbxFichaEventoDetalle.TabIndex = 5;
+            btnFichaEventoEditar.TabIndex = 6;
+            btnFichaEventoCerrar.TabIndex = 7;
         }
 
         private void FrmFichaEvento_Load(object sender, EventArgs e)

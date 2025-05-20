@@ -39,12 +39,14 @@
             this.cbxAgregarEventoChofer = new System.Windows.Forms.ComboBox();
             this.btnAgregarEvento = new System.Windows.Forms.Button();
             this.btnAgregarEventoCerrar = new System.Windows.Forms.Button();
+            this.cbxAgregarEventoFurgon = new System.Windows.Forms.ComboBox();
+            this.lblAgregarEventoFurgon = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // cbxAgregarEventoInterno
             // 
             this.cbxAgregarEventoInterno.FormattingEnabled = true;
-            this.cbxAgregarEventoInterno.Location = new System.Drawing.Point(72, 81);
+            this.cbxAgregarEventoInterno.Location = new System.Drawing.Point(280, 79);
             this.cbxAgregarEventoInterno.Name = "cbxAgregarEventoInterno";
             this.cbxAgregarEventoInterno.Size = new System.Drawing.Size(72, 21);
             this.cbxAgregarEventoInterno.TabIndex = 80;
@@ -60,16 +62,16 @@
             // 
             // tbxAgregarEventoDetalle
             // 
-            this.tbxAgregarEventoDetalle.Location = new System.Drawing.Point(28, 131);
+            this.tbxAgregarEventoDetalle.Location = new System.Drawing.Point(28, 133);
             this.tbxAgregarEventoDetalle.Multiline = true;
             this.tbxAgregarEventoDetalle.Name = "tbxAgregarEventoDetalle";
-            this.tbxAgregarEventoDetalle.Size = new System.Drawing.Size(324, 186);
+            this.tbxAgregarEventoDetalle.Size = new System.Drawing.Size(324, 184);
             this.tbxAgregarEventoDetalle.TabIndex = 74;
             // 
             // lblAgregarEventoDetalle
             // 
             this.lblAgregarEventoDetalle.AutoSize = true;
-            this.lblAgregarEventoDetalle.Location = new System.Drawing.Point(36, 115);
+            this.lblAgregarEventoDetalle.Location = new System.Drawing.Point(29, 114);
             this.lblAgregarEventoDetalle.Name = "lblAgregarEventoDetalle";
             this.lblAgregarEventoDetalle.Size = new System.Drawing.Size(40, 13);
             this.lblAgregarEventoDetalle.TabIndex = 73;
@@ -78,11 +80,11 @@
             // lblAgregarEventoInterno
             // 
             this.lblAgregarEventoInterno.AutoSize = true;
-            this.lblAgregarEventoInterno.Location = new System.Drawing.Point(27, 85);
+            this.lblAgregarEventoInterno.Location = new System.Drawing.Point(235, 83);
             this.lblAgregarEventoInterno.Name = "lblAgregarEventoInterno";
-            this.lblAgregarEventoInterno.Size = new System.Drawing.Size(39, 13);
+            this.lblAgregarEventoInterno.Size = new System.Drawing.Size(37, 13);
             this.lblAgregarEventoInterno.TabIndex = 72;
-            this.lblAgregarEventoInterno.Text = "interno";
+            this.lblAgregarEventoInterno.Text = "tractor";
             // 
             // lblAgregarEventoTitulo
             // 
@@ -96,16 +98,16 @@
             // 
             // tbxAgregarEventoTipo
             // 
-            this.tbxAgregarEventoTipo.Location = new System.Drawing.Point(185, 82);
+            this.tbxAgregarEventoTipo.Location = new System.Drawing.Point(72, 80);
             this.tbxAgregarEventoTipo.Name = "tbxAgregarEventoTipo";
-            this.tbxAgregarEventoTipo.Size = new System.Drawing.Size(167, 20);
+            this.tbxAgregarEventoTipo.Size = new System.Drawing.Size(157, 20);
             this.tbxAgregarEventoTipo.TabIndex = 82;
             this.tbxAgregarEventoTipo.TextChanged += new System.EventHandler(this.tbxAgregarEventoTipo_TextChanged);
             // 
             // lblAgregarEventoTipo
             // 
             this.lblAgregarEventoTipo.AutoSize = true;
-            this.lblAgregarEventoTipo.Location = new System.Drawing.Point(155, 85);
+            this.lblAgregarEventoTipo.Location = new System.Drawing.Point(42, 83);
             this.lblAgregarEventoTipo.Name = "lblAgregarEventoTipo";
             this.lblAgregarEventoTipo.Size = new System.Drawing.Size(24, 13);
             this.lblAgregarEventoTipo.TabIndex = 81;
@@ -139,11 +141,30 @@
             this.btnAgregarEventoCerrar.UseVisualStyleBackColor = true;
             this.btnAgregarEventoCerrar.Click += new System.EventHandler(this.btnAgregarEventoCerrar_Click);
             // 
+            // cbxAgregarEventoFurgon
+            // 
+            this.cbxAgregarEventoFurgon.FormattingEnabled = true;
+            this.cbxAgregarEventoFurgon.Location = new System.Drawing.Point(280, 106);
+            this.cbxAgregarEventoFurgon.Name = "cbxAgregarEventoFurgon";
+            this.cbxAgregarEventoFurgon.Size = new System.Drawing.Size(72, 21);
+            this.cbxAgregarEventoFurgon.TabIndex = 87;
+            // 
+            // lblAgregarEventoFurgon
+            // 
+            this.lblAgregarEventoFurgon.AutoSize = true;
+            this.lblAgregarEventoFurgon.Location = new System.Drawing.Point(235, 110);
+            this.lblAgregarEventoFurgon.Name = "lblAgregarEventoFurgon";
+            this.lblAgregarEventoFurgon.Size = new System.Drawing.Size(37, 13);
+            this.lblAgregarEventoFurgon.TabIndex = 86;
+            this.lblAgregarEventoFurgon.Text = "furgon";
+            // 
             // FrmAgregarEvento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(380, 354);
+            this.Controls.Add(this.cbxAgregarEventoFurgon);
+            this.Controls.Add(this.lblAgregarEventoFurgon);
             this.Controls.Add(this.btnAgregarEventoCerrar);
             this.Controls.Add(this.btnAgregarEvento);
             this.Controls.Add(this.cbxAgregarEventoChofer);
@@ -176,5 +197,7 @@
         private System.Windows.Forms.ComboBox cbxAgregarEventoChofer;
         private System.Windows.Forms.Button btnAgregarEvento;
         private System.Windows.Forms.Button btnAgregarEventoCerrar;
+        private System.Windows.Forms.ComboBox cbxAgregarEventoFurgon;
+        private System.Windows.Forms.Label lblAgregarEventoFurgon;
     }
 }
