@@ -18,6 +18,20 @@ namespace presentacion.Eventos
         public FrmAgregarMovimiento()
         {
             InitializeComponent();
+            cbxAgregarMovimientoChofer.TabIndex = 0;
+            cbxAgregarMovimientoInterno.TabIndex = 1;
+            cbxAgregarMovimientoFurgon.TabIndex = 2;
+            cbxAgregarMovimientoTipo.TabIndex = 3;
+            cbxAgregarMovimientoPanico.TabIndex = 4;
+            cbxAgregarMovimientoReporte.TabIndex = 5;
+            cbxAgregarMovimientoCabina.TabIndex = 6;
+            cbxAgregarMovimientoCorte.TabIndex = 7;
+            cbxAgregarMovimientoDesenganche.TabIndex = 8;
+            cbxAgregarMovimientoAntivandalico.TabIndex = 9;
+            cbxAgregarMovimientoOkfurgon.TabIndex=10;
+            tbxAgregarMovimientoDetalle.TabIndex = 11;
+            btnAgregarMovimiento.TabIndex = 12;
+            btnAgregarMovimientoCerrar.TabIndex = 13;
         }
 
         private void FrmAgregarMovimiento_Load(object sender, EventArgs e)

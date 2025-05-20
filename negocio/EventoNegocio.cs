@@ -244,7 +244,7 @@ namespace negocio
 
             try
             {
-                datos.setearConsulta("UPDATE cantarini_control.dbo.eventos SET tipo='" + mdEv.Tipo.ToUpper() + "', detalle='" + mdEv.Detalle.ToUpper() + "' WHERE idEvento="+ mdEv.Id_Evento + ";");
+                datos.setearConsulta("UPDATE cantarini_control.dbo.eventos SET dni=" + dni + ", interno=" + mdEv.Interno + ", furgon=" + mdEv.Furgon + ", tipo='" + mdEv.Tipo.ToUpper() + "', detalle='" + mdEv.Detalle.ToUpper() + "' WHERE idEvento="+ mdEv.Id_Evento + ";");
                 datos.ejecutarAccion();
             }
             catch (Exception ex)

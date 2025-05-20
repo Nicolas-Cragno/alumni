@@ -19,6 +19,19 @@ namespace presentacion.Eventos
         {
             InitializeComponent();
             movimiento = movimientoSeleccionado;
+            cbxModificarMovimientoChofer.TabIndex = 0;
+            cbxModificarMovimientoInterno.TabIndex = 1;
+            cbxModificarMovimientoFurgon.TabIndex = 2;
+            cbxModificarMovimientoPanico.TabIndex = 3;
+            cbxModificarMovimientoReporte.TabIndex = 4;
+            cbxModificarMovimientoCabina.TabIndex = 5;
+            cbxModificarMovimientoCorte.TabIndex = 6;
+            cbxModificarMovimientoDesenganche.TabIndex = 7;
+            cbxModificarMovimientoAntivandalico.TabIndex = 8;
+            cbxModificarMovimientoOkfurgon.TabIndex= 9;
+            tbxModificarMovimientoDetalle.TabIndex = 10;
+            btnModificarMovimiento.TabIndex = 11;
+            btnModificarMovimientoCerrar.TabIndex = 12;
         }
 
         private void btnModificarMovimientoCerrar_Click(object sender, EventArgs e)
@@ -34,11 +47,13 @@ namespace presentacion.Eventos
             {
                 TractorNegocio tractorNegocio = new TractorNegocio();
                 FurgonNegocio furgonNegocio = new FurgonNegocio();
+                PersonaNegocio personaNegocio = new PersonaNegocio();
                 idMovimiento = movimiento.Id_Movimiento;
                 tipo = movimiento.Id_Tipo;
 
                 lblModificarMovimientoTitulo.Text = idMovimiento + " - " + tipo;
                 lblModificarMovimientoFecha.Text = movimiento.Fecha.ToString();
+                cbxModificarMovimientoChofer.DataSource = personaNegocio.nombreChoferes();
                 cbxModificarMovimientoChofer.Text = movimiento.Persona;
                 cbxModificarMovimientoInterno.DataSource = tractorNegocio.listarInternos();
                 cbxModificarMovimientoInterno.Text = movimiento.Interno.ToString();

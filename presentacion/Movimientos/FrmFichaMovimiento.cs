@@ -19,6 +19,13 @@ namespace presentacion.Eventos
         {
             InitializeComponent();
             movimiento = movimientoSeleccionado;
+            tbxFichaMovimientoFecha.TabIndex = 0;
+            tbxFichaMovimientoChofer.TabIndex = 1;
+            tbxFichaMovimientoInterno.TabIndex = 2;
+            tbxFichaMovimientoFurgon.TabIndex = 3;
+            tbxFichaMovimientoDetalle.TabIndex = 4;
+            btnFichaMovimientoEditar.TabIndex = 5;
+            btnFichaMovimientoCerrar.TabIndex = 6;
         }
 
         private void FrmFichaMovimiento_Load(object sender, EventArgs e)
@@ -50,7 +57,7 @@ namespace presentacion.Eventos
         {
             FrmModificarMovimiento ventana = new FrmModificarMovimiento(movimiento);
             ventana.ShowDialog();
-            cargar();
+            Close();
         }
     }
 }

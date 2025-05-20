@@ -31,9 +31,16 @@ namespace presentacion.Eventos
             int idEvento;
             if(evento != null)
             {
+                TractorNegocio tractorNegocio = new TractorNegocio();
+                FurgonNegocio furgonNegocio = new FurgonNegocio();
+                PersonaNegocio personaNegocio = new PersonaNegocio();
+
                 idEvento = evento.Id_Evento;
+                cbxModificarEventoChofer.DataSource = personaNegocio.nombreChoferes();
                 cbxModificarEventoChofer.Text = evento.Persona;
+                cbxModificarEventoInterno.DataSource = tractorNegocio.listarInternos();
                 cbxModificarEventoInterno.Text = evento.Interno.ToString();
+                cbxModificarEventoFurgon.DataSource = furgonNegocio.listarInternos();
                 cbxModificarEventoFurgon.Text = evento.Furgon.ToString();
                 tbxModificarEventoTipo.Text = evento.Tipo;
                 tbxModificarEventoDetalle.Text = evento.Detalle;
@@ -48,9 +55,9 @@ namespace presentacion.Eventos
             try
             {
                 modifEvento.Id_Evento = evento.Id_Evento;
-                modifEvento.Persona = evento.Persona;
-                modifEvento.Interno = evento.Interno;
-                modifEvento.Furgon = evento.Furgon;
+                modifEvento.Persona = cbxModificarEventoChofer.Text;
+                modifEvento.Interno = int.Parse(cbxModificarEventoInterno.Text);
+                modifEvento.Furgon = int.Parse(cbxModificarEventoFurgon.Text);
                 modifEvento.Tipo = tbxModificarEventoTipo.Text;
                 modifEvento.Detalle = tbxModificarEventoDetalle.Text;   
 

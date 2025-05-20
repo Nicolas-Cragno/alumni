@@ -48,7 +48,7 @@ namespace presentacion.Eventos
         {
             FrmModificarEvento ventana = new FrmModificarEvento(evento);
             ventana.ShowDialog();
-            cargar();
+            Close();
         }
     }
 }

@@ -47,7 +47,7 @@ namespace presentacion.Eventos
 
             if (filtro != "")
             {
-                listaFiltrada = listadoEventos.FindAll(ev => ev.Persona.ToString().Contains(filtro.ToUpper()) || ev.Interno.ToString().Contains(filtro.ToUpper()) || ev.Interno.ToString().Contains(filtro.ToUpper()) || ev.Fecha.ToString().Contains(filtro.ToUpper()));
+                listaFiltrada = listadoEventos.FindAll(ev => ev.Persona.ToString().Contains(filtro.ToUpper()) || ev.Interno.ToString().Contains(filtro.ToUpper()) || ev.Interno.ToString().Contains(filtro.ToUpper()) || ev.Tipo.ToString().Contains(filtro.ToUpper()) || ev.Fecha.ToString().Contains(filtro.ToUpper()));
             }
             else
             {

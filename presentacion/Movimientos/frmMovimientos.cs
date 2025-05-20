@@ -18,6 +18,9 @@ namespace presentacion.Eventos
         public frmMovimientos()
         {
             InitializeComponent();
+            tbxMovimientosFiltro.TabIndex = 0;
+            btnMovimientosNuevo.TabIndex = 1;
+            dgvMovimientos.TabIndex = 2;
         }
 
         private void btnMovimientosClose_Click(object sender, EventArgs e)
